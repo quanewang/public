@@ -2,6 +2,15 @@
 LESSON
 -- boundary
 
+He should communicate more. Preferably constantly during the interview.
+Silence is not a good thing here. It's difficult for the interviewer
+to know what you're thinking or if you're going down the wrong path
+if you don't think out loud. His code can be more Pythonic/idiomatic.
+In Python, we can swap values with a single line "arr[i], arr[j] = arr[j], arr[i]".
+There's no need for a temp variable. Pay extra attention and look for
+off by 1 errors when dealing with 0-based and 1-based values.
+
+
 Given an array of integers arr:
 
 Write a function flip(arr, k) that reverses the order of the first k elements in the array arr.
@@ -11,6 +20,8 @@ Example:
 input:  arr = [1, 5, 4, 3, 2]
 
 output: [1, 2, 3, 4, 5] # to clarify, this is pancakeSort's output
+
+
 """
 
 def pancake_sort(arr):
