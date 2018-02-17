@@ -26,6 +26,44 @@ Output:
 4
 2
 """
+def p1(stmt):
+    if not stmt:
+        return 0
+    print phelper1(stmt, 0, len(stmt)-1, True)
+
+def phelper1(stmt, low, high, b):
+    if low>high:
+        return 0
+    if low==high:
+        if stmt[low] == 'T':
+            return 1 if b else 0
+        else:
+            return 0 if b else 1
+    count = 0
+    for k in range(low+1, high, 2):
+        if stmt[k] == '&' and b:
+            count += phelper1(stmt, low, k-1, b) * phelper1(stmt, k+1, high, b)
+        elif stmt[k] == '&' and not b:
+            count += phelper1(stmt, low, k-1, True) * phelper1(stmt, k+1, high, False) \
+                     + phelper1(stmt, low, k-1, False) * phelper1(stmt, k+1, high, True)\
+                     + phelper1(stmt, low, k - 1, False) * phelper1(stmt, k + 1, high, False)
+        elif stmt[k] == '|' and b:
+            count += phelper1(stmt, low, k - 1, True) * phelper1(stmt, k + 1, high, False) \
+                     + phelper1(stmt, low, k - 1, False) * phelper1(stmt, k + 1, high, True) \
+                     + phelper1(stmt, low, k - 1, True) * phelper1(stmt, k + 1, high, True)
+        elif stmt[k] == '|' and not b:
+            count += phelper1(stmt, low, k - 1, False) * phelper1(stmt, k + 1, high, False)
+        elif stmt[k] == '^' and b:
+            count += phelper1(stmt, low, k - 1, True) * phelper1(stmt, k + 1, high, False) \
+                     + phelper1(stmt, low, k - 1, False) * phelper1(stmt, k + 1, high, True)
+        elif stmt[k] == '^' and not b:
+            count += phelper1(stmt, low, k - 1, True) * phelper1(stmt, k + 1, high, True) \
+                     + phelper1(stmt, low, k - 1, False) * phelper1(stmt, k + 1, high, False)
+    return count
+
+p1("T|T&F^T")
+p1("T^F|F")
+
 def p(stmt):
     symbols, ops = [], []
     for x in stmt:
