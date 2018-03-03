@@ -46,3 +46,22 @@ def decrypt(word):
 
 print decrypt("dnotq") #crime
 print decrypt("flgxswdliefy") #
+
+
+def decrypt2(word):
+    if not word:
+        return ''
+    result=chr(ord(word[0])-1)
+    prev = ord(word[0])
+    for i in range(1, len(word)):
+        result = result+decryptChar(ord(word[i]), prev)
+        prev = ord(word[i])
+    return result
+
+def decryptChar(c, prev):
+    c = c - prev
+    while c<ord('a'):
+        c = c+26
+    return chr(c)
+
+print decrypt2("dnotq")

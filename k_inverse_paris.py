@@ -20,3 +20,23 @@ https://leetcode.com/problems/k-inverse-pairs-array/description/
 """
 class Solution(object):
     def kInversePairs(self, n, k):
+        return kInverse([], range(1, n+1), 0, k)
+
+def kInverse(left, right, cur_k, k):
+    if cur_k==k:
+        return 1
+    elif cur_k>k:
+        return 0
+    elif not right:
+        return 0
+    count = 0
+    for i in range(0, len(right)):
+        left.append(right[i])
+        right.pop(i)
+        count += kInverse(left, right, cur_k + i, k)
+        right_i = left.pop()
+        right.insert(i, right_i)
+    return count
+
+s = Solution()
+print s.kInversePairs(10,13)

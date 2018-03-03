@@ -42,3 +42,23 @@ def drawLine(x, y, x1, y1):
 
 
 drawHTree(0, 0, 10, 3)
+
+
+def htree(depth, length, x, y):
+    if not depth:
+        return
+    x0, x1 = x-length/2, x + length/2
+    y0, y1 = y-length/2, y + length/2
+    draw(x0, y0, x0, y1)
+    draw(x0, y, x1, y)
+    draw(x, y0, x, y1)
+    if depth:
+        htree(depth-1, length/2, x0, y0)
+        htree(depth-1, length/2, x0, y1)
+        htree(depth-1, length/2, x1, y0)
+        htree(depth-1, length/2, x1, y1)
+
+def draw(x0, y0, x1, y1):
+    print x0, y0, x1, y1
+
+htree(2, 100, 0, 0)

@@ -58,3 +58,30 @@ print find(nums, 8)
 print find(nums, 5)
 print find(nums, 4)
 print find(nums, 9)
+
+
+def search1(arr, x):
+    low, high = 0, len(arr)-1
+    while low<=high:
+        mid = (low+high)//2
+        if arr[mid]==x:
+            return mid
+        elif arr[mid]<x:
+            low = mid + 1
+        else:
+            high = mid -1
+    return -1
+
+def search(arr):
+    if not arr:
+        return -1
+    if arr[0]<=arr[len(arr)-1]:
+        return 0
+    low, high = 0, len(arr)-1
+    while low<=high:
+        mid = (low+high)//2
+        if arr[mid]>=arr[low]:
+            low = mid + 1
+        else:
+            high = mid -1
+    return low
