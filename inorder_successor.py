@@ -1,14 +1,32 @@
-#########################################################
-# CODE INSTRUCTIONS:                                    #
-# 1) The method findInOrderSuccessor you're asked      #
-#    to implement is located at line 30.                #
-# 2) Use the helper code below to implement it.         #
-# 3) In a nutshell, the helper code allows you to       #
-#    to build a Binary Search Tree.                     #
-# 4) Jump to line 88 to see an example for how the      #
-#    helper code is used to test findInOrderSuccessor.  #
-#########################################################
+def successor(node):
+    if not node:
+        return None
+    if node.right:
+        return node.right
+    elif node.parent:
+        if node.parent.left==node:
+            return node.parent
+        else:
+            while node.parent:
+                if node.parent.right and node.parent.right!=node:
+                    return get_first_node(node.parent.right)
+                node = node.parent
+    return None
 
+def successor1(node, keyNode):
+    return helper(node, keyNode.val, None)
+
+def helper(node, key, successor):
+    if node.val==key:
+        if node.right:
+            return get_first(node.right)
+        else:
+            return successor
+    elif node.val>key:
+        return helper(node.left, key, node)
+    else:
+        return helper(node.right, key, successor)
+    return None
 
 # A node
 class Node:

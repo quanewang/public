@@ -54,3 +54,29 @@ class Solution(object):
             start += 1
             end -= 1
         return True
+
+def dp(s):
+    if not s:
+        return 0
+    n=len(s)
+    m=[0]*n
+    for i in range(1, n):
+        m[i]=1+m[i-1]
+        for j in range(0, i):
+            if valid(s[j:i+1]):
+                if j==0:
+                    m[i] = min(m[i], m[j])
+                else:
+                    m[i] = min(m[i], m[j-1]+1)
+
+    return m[n-1]
+def valid(s):
+    l, h=0, len(s)-1
+    while l<h:
+        if s[l]!=s[h]:
+            return False
+        l+=1
+        h-=1
+    return True
+print dp("aabaa")
+print dp("abceedee")

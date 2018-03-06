@@ -41,7 +41,7 @@ class Solution(object):
         i = len(a)/2
         j = k-i-1
         if (a[i]==b[j]):
-            return max(a[i], b[j])
+            return a[i]
         elif a[i]<b[j]:
             return self.findSmallestK(a[i:], b[:j], k-i)
         else:

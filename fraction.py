@@ -1,13 +1,9 @@
 """
-Given a fraction. Convert it into a decimal. So simple :P
-
+Given a fraction. Convert it into a decimal.
 eg.
 10/2 = 5
 3/5 = 0.6
-
-(The Question Begins Now)  :D
 If the decimals are repeating recursively, then enclose them inside  ().
-
 eg.
 8/3 = 2.(6)
 

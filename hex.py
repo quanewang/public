@@ -1,5 +1,6 @@
 """
-You are given a number n in hexadecimal. A new number can be made from the number n by selecting
+You are given a number n in hexadecimal. A new number can be made
+from the number n by selecting
 any subsequence of it (in HexaDecimal) and rearranging it.
 You have tell the number of distinct numbers that can be made from number n.
 Since the answer will be very large, output the answer as modulo 10^9+7.

@@ -5,14 +5,13 @@ getDifferentNumber that finds the smallest nonnegative integer that is NOT in th
 
 Solve first for the case when youre NOT allowed to modify the input arr.
 If successful and still have time, see if you can come up with an algorithm with
-an improved space complexity when modifying arr is allowed. Do so without trading off the time complexity.
+an improved space complexity when modifying arr is allowed.
+Do so without trading off the time complexity.
 
 Analyze the time and space complexities of your algorithm.
 
 Example:
-
 input:  arr = [0, 1, 2, 3]
-
 output: 4
 """
 

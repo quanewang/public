@@ -25,16 +25,16 @@ def drawHTree(x, y, length, depth):
     drawHTree_(x, y, length, depth)
 
 def drawHTree_(x, y, length, depth):
-    print 'depth=', depth
+    if depth==0:
+        return
     drawLine(x - length / 2, y, x + length / 2, y)
     drawLine(x - length / 2, y - length / 2, x - length / 2, y + length / 2)
     drawLine(x + length / 2, y - length / 2, x + length / 2, y + length / 2)
-    if depth > 1:
-        next_length = length / 2
-        drawHTree_(x - length / 2, y - length / 2, next_length, depth - 1)
-        drawHTree_(x - length / 2, y + length / 2, next_length, depth - 1)
-        drawHTree_(x + length / 2, y - length / 2, next_length, depth - 1)
-        drawHTree_(x + length / 2, y + length / 2, next_length, depth - 1)
+    next_length = length / 2
+    drawHTree_(x - length / 2, y - length / 2, next_length, depth - 1)
+    drawHTree_(x - length / 2, y + length / 2, next_length, depth - 1)
+    drawHTree_(x + length / 2, y - length / 2, next_length, depth - 1)
+    drawHTree_(x + length / 2, y + length / 2, next_length, depth - 1)
 
 
 def drawLine(x, y, x1, y1):
@@ -61,4 +61,25 @@ def htree(depth, length, x, y):
 def draw(x0, y0, x1, y1):
     print x0, y0, x1, y1
 
-htree(2, 100, 0, 0)
+"""
+snow flakes
+"""
+def snowflakes(length, depth):
+    drawEdge(length, depth)
+    print 'rotate 120'
+    drawEdge(length, depth)
+    print 'rotate 120'
+    drawEdge(length, depth)
+
+def drawEdge(length, depth):
+    if depth==0:
+        print length
+        return
+    drawEdge(length/3, depth-1)
+    print "rotate -60"
+    drawEdge(length/3, depth-1)
+    print "rotate -60"
+    drawEdge(length/3, depth-1)
+    print "rotate -60"
+
+snowflakes(10.0, 3)

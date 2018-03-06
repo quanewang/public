@@ -12,6 +12,8 @@ Analyze the time and space complexities of your
 solution and explain its correctness.
 '''
 
+
+
 def index_equals_value_search(arr):
   low = 0
   high = len(arr)-1
@@ -27,5 +29,5 @@ def index_equals_value_search(arr):
   return -1
 
 arr = [-8,0,2,5]
-arr = [-1,0,3,6]
+arr1 = [-1,0,3,6]
 print index_equals_value_search(arr)
