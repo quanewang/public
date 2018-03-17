@@ -35,7 +35,7 @@ def kInverse(left, right, cur_k, k):
         right.pop(i)
         count += kInverse(left, right, cur_k + i, k)
         right_i = left.pop()
-        right.insert(i, right_i)
+        right.insert_one(i, right_i)
     return count
 
 s = Solution()

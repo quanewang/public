@@ -27,3 +27,43 @@ def mul(a):
     return result
 print mul([1, 3, 5])
 
+def convert(n):
+    result = ''
+    units=['', 'thousand', 'million', 'billion']
+    a = partition(n)
+    for i in range(len(a)-1, -1, -1):
+        p = print_xxx(a[i], i==0)
+        result += p + ' '
+        if p!='':
+            result += units[i] + ' '
+    return result
+
+def print_xxx(n, is_last):
+    result=''
+    ones=["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
+    tens=["", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninty"]
+    teens=["ten", "eleven", "twelve", "thirteen", "forteen", "fifteen", "sixteen", "seventeen", "eighteen", "ninteen"]
+    if n>99:
+        result += ones[n//100] + ' hundred '
+    if n%100>=20:
+        result += tens[n%100//10] + ' '
+    elif n%100>=10:
+        result += teens[n%10] + ' '
+        return result
+    elif n==0:
+        if is_last:
+            return 'zero'
+    if n%10>0:
+        result+=ones[n%10]
+    return result
+
+def partition(n):
+    t=str(n)
+    r=[]
+    while n>1000:
+        r.append(n%1000)
+        n = n//1000
+    r.append(n)
+    return r
+
+print convert(12321132)

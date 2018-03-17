@@ -24,7 +24,7 @@ class MapSum(object):
         else:
             if key[0] not in self.children:
                 self.children[key[0]] = MapSum()
-            self.children[key[0]].insert(key[1:], val)
+            self.children[key[0]].insert_one(key[1:], val)
 
     def sum(self, prefix):
         """

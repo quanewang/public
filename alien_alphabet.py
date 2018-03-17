@@ -53,9 +53,9 @@ def enter(chars, a, b):
             found_b = True
             idx_b = i
     if found_a and not found_b:
-        chars.insert(idx_a+1, b)
+        chars.insert_one(idx_a + 1, b)
     elif not found_a and found_b:
-        chars.insert(idx_b, a)
+        chars.insert_one(idx_b, a)
     elif not found_a and not found_b:
         chars.append(a)
         chars.append(b)
