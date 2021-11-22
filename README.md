@@ -1,3 +1,8 @@
+### Problems
+
+All the subsets of an array
+
+All permutations of a list of chars
 
 ### Best Cover of Array
 Given an array A consisting of only 0s and 1s. You can perform the following operation on the array:
