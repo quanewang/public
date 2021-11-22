@@ -21,8 +21,9 @@ of confusing numbers between 1 and N inclusive.
 
 Given two words (beginWord and endWord), and a dictionary's word list, 
 find the length of shortest transformation sequence from beginWord to endWord, 
-such that: 1) Only one letter can be changed at a time and, 
-2) Each transformed word must exist in the word list.
+such that: 
+* Only one letter can be changed at a time and, 
+* Each transformed word must exist in the word list.
 
 Given a matrix of N rows and M columns. From m[i][j],
  we can move to m[i+1][j], if m[i+1][j] > m[i][j], or 
@@ -90,6 +91,7 @@ Output
 ```
 
 You have to find all the permutations of integers from 1 to n without using the permutation related library functions in your code.
+```
 Sample 0
 Input
 n: 2
@@ -100,11 +102,12 @@ Input
 n: 3
 Output
 [ [ 1 , 2 , 3 ] , [ 1 , 3 , 2 ] , [ 2 , 1 , 3 ] , [ 2 , 3 , 1 ] , [ 3 , 2 , 1 ] , [ 3 , 1 , 2 ] ]
-
+```
 
 Given an array of array of integers arrs and a random permutation p of first n integers {1,2,...,n}. Find if the given permutation p is the smallest supersequence of arrs.
 A sequence is said to be a supersequence if it contains all arrays in arrs as subsequences.
 A supersequence A is said to be smaller than another supersequence B, if A has less length than B. If both have same length, lexicographically smaller sequence is smaller.
+```
 Sample 0
 Input
 arrs:[[1,3],[2,3]]
@@ -119,9 +122,11 @@ arrs:[[1,2],[3,2]]
 p:[1,3,2]
 Output
 true
+```
 
 Given a binary matrix a comprising only 0's and 1's. You need to find the area of the largest rectangle containing only 1's.
 Note - Return the single integer which is the required area.
+```
 Sample 0
 Input
 [[1,1]]
@@ -135,10 +140,12 @@ Output
 Largest Rectangle in Histogram
 [2, 3, 4, 2, 2] 10
 [2, 1, 5, 6, 2, 3] 10
+```
 
 Minimum Jumps
 Given an array of non negative numbers, each element in the array reprents maximum jump length from that position. Initially you are at first position (0th index) of the array and you want to go to the last position. Find minimum number of jumps you need to make to reach the last position.
 Note that there is always a way to reach the last position.
+```
 Sample 0
 Input
 [2,1,3,5,1]
@@ -151,12 +158,14 @@ Input
 [1,4,2,6,3]
 Output
 2
+```
 
 Given N jobs, where i-th job is scheduled to be done from startTime[i] to endTime[i], with a profit of profit[i].
 
 You need to output the maximum profit that can be made by selecting jobs such that, no two jobs are overlapping in the time range.
 Note:
 If you finish a job at time T, you can start another job at time T.
+```
 Sample 0
 Input
 startTime: [1, 3, 7, 2]
@@ -164,7 +173,7 @@ endTime: [2, 4, 19, 17]
 profit: [5, 2, 10, 20]
 Output
 25
-
+```
 
 Trapping 2D Rainwater
 Rocky is an architect. He likes to build different unique structures.
@@ -173,6 +182,7 @@ He wants to find out, maximum volume of water the structure can hold when it rai
 Given N x M matrix heights where,
 heights[ i ][ j ] = height of pillar at ( i, j )
 Return the maximum volume of water the structure can hold.
+```
 Sample 0
 Input
 heights:
@@ -198,11 +208,13 @@ Output
 4
 Explanation
 Only pillar at (2,2) with height 2 can hold water of 4 cubic units.
+```
 
 Best Cover of Array
 Given an array A consisting of only 0s and 1s. You can perform the following operation on the array:
 choose any contiguous subarray of length at most K and change all the elements of the subarray to 1.
 You goal is to find the minimum number of 0s remaining in the array after performing the operation at most Q times.
+```
 Sample 0
 Input
 A : [0, 0, 0, 1, 1, 1]
@@ -223,3 +235,4 @@ K : 2
 Q : 1
 Output
 1
+```
