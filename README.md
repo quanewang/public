@@ -4,6 +4,8 @@ All permutations of a list of chars
 
 A sorted list of the square of each element in a sorted list of integers
 
+Quicksort with duplicates
+
 Given a binary tree, find the maximum path sum. The path may start and end at any node in the tree.
 
 We can rotate digits by 180 degrees to form new digits. 
