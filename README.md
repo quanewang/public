@@ -55,7 +55,7 @@ Given a rows x cols binary matrix filled with 0's and 1's, find the largest rect
 
 Your car starts at position 0 and speed +1 on an infinite number line. (Your car can go into negative positions.) Your car drives automatically according to a sequence of instructions A (accelerate) and R (reverse)...Now for some target position, say the length of the shortest sequence of instructions to get there." 
 
-"Given strings S and T, find the minimum (contiguous) substring W of S, so that T is a subsequence of W. If there is no such window in S that covers all characters in T, return the empty string "". If there are multiple such minimum-length windows, return the one with the left-most starting index.
+Given strings S and T, find the minimum (contiguous) substring W of S, so that T is a subsequence of W. If there is no such window in S that covers all characters in T, return the empty string "". If there are multiple such minimum-length windows, return the one with the left-most starting index.
 
 A strobogrammatic number is a number that looks the same when rotated 180 degrees (looked at upside down). Find all strobogrammatic numbers that are of length = n.
 
@@ -74,18 +74,13 @@ The triplet of the values returned should be sorted. If multiple such values exi
 Sample 0
 Input
 nums: [1, 2, 3, 3, 4, 1, 1]
-
 target: 6
-
 Output
 [1, 2, 3]
-
 Sample 1
 Input
 num: [1, 2, 3, 3, 4, 1, 1]
-
 target: 100
-
 Output
 []
 
@@ -94,14 +89,11 @@ You have to find all the permutations of integers from 1 to n without using the 
 Sample 0
 Input
 n: 2
-
 Output
 [ [ 1 , 2 ] , [ 2 , 1 ] ]
-
 Sample 1
 Input
 n: 3
-
 Output
 [ [ 1 , 2 , 3 ] , [ 1 , 3 , 2 ] , [ 2 , 1 , 3 ] , [ 2 , 3 , 1 ] , [ 3 , 2 , 1 ] , [ 3 , 1 , 2 ] ]
 
@@ -109,25 +101,18 @@ Output
 Given an array of array of integers arrs and a random permutation p of first n integers {1,2,...,n}. Find if the given permutation p is the smallest supersequence of arrs.
 A sequence is said to be a supersequence if it contains all arrays in arrs as subsequences.
 A supersequence A is said to be smaller than another supersequence B, if A has less length than B. If both have same length, lexicographically smaller sequence is smaller.
-
 Sample 0
 Input
 arrs:[[1,3],[2,3]]
-
 p:[2,1,3]
-
 Output
 false
-
 Explanation
 [1,2,3] is the smallest supersequence in this case.
-
 Sample 1
 Input
 arrs:[[1,2],[3,2]]
-
 p:[1,3,2]
-
 Output
 true
 
@@ -136,17 +121,13 @@ Note - Return the single integer which is the required area.
 Sample 0
 Input
 [[1,1]]
-
 Output
 2
-
 Sample 1
 Input
 [[1,0]]
-
 Output
 1
-
 Largest Rectangle in Histogram
 [2, 3, 4, 2, 2] 10
 [2, 1, 5, 6, 2, 3] 10
@@ -154,21 +135,16 @@ Largest Rectangle in Histogram
 Minimum Jumps
 Given an array of non negative numbers, each element in the array reprents maximum jump length from that position. Initially you are at first position (0th index) of the array and you want to go to the last position. Find minimum number of jumps you need to make to reach the last position.
 Note that there is always a way to reach the last position.
-
 Sample 0
 Input
 [2,1,3,5,1]
-
 Output
 2
-
 Explanation
 We can jump 2 steps from index 0 to 2 and then 2 steps from index 2 to 4. So, minimum number of jumps to reach to the last position is 2.
-
 Sample 1
 Input
 [1,4,2,6,3]
-
 Output
 2
 
@@ -182,7 +158,6 @@ Input
 startTime: [1, 3, 7, 2]
 endTime: [2, 4, 19, 17]
 profit: [5, 2, 10, 20]
-
 Output
 25
 
@@ -191,12 +166,9 @@ Trapping 2D Rainwater
 Rocky is an architect. He likes to build different unique structures.
 He made structure of pillars of the same width and breadth but having different heights in a region.
 He wants to find out, maximum volume of water the structure can hold when it rains.
-
 Given N x M matrix heights where,
 heights[ i ][ j ] = height of pillar at ( i, j )
-
 Return the maximum volume of water the structure can hold.
-
 Sample 0
 Input
 heights:
@@ -209,11 +181,9 @@ heights:
 	]
 Output
 20
-
 Sample 1
 Input
 heights:
-
 	[
 		[1, 2, 5, 9],
 		[3, 2, 6, 11],
@@ -222,7 +192,6 @@ heights:
 	]
 Output
 4
-
 Explanation
 Only pillar at (2,2) with height 2 can hold water of 4 cubic units.
 
@@ -230,13 +199,11 @@ Best Cover of Array
 Given an array A consisting of only 0s and 1s. You can perform the following operation on the array:
 choose any contiguous subarray of length at most K and change all the elements of the subarray to 1.
 You goal is to find the minimum number of 0s remaining in the array after performing the operation at most Q times.
-
 Sample 0
 Input
 A : [0, 0, 0, 1, 1, 1]
 K : 2
 Q : 2
-
 Output
 0
 
@@ -245,12 +212,10 @@ We can perform the operation once on the subarray [1, 2],
 the array becomes, [1, 1, 0, 1, 1].
 Then we perform the operation on the subarray [3, 3],
 The array becomes, [1, 1, 1, 1, 1]
-
 Sample 1
 Input
 A : [1, 0, 0, 0, 1, 1]
 K : 2
 Q : 1
-
 Output
 1
