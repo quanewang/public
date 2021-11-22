@@ -1,5 +1,3 @@
-### Problems
-
 All the subsets of an array
 
 All permutations of a list of chars
