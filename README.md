@@ -73,6 +73,8 @@ Given a matrix and a target, return the number of non-empty submatrices that sum
 
 Given an array of numbers and a target integer, find three elements from the array that sums up to target. Return the value of these three elements (0-based). (Note: This is different from Two Sum where you had to return the indices)
 The triplet of the values returned should be sorted. If multiple such values exist, break ties by returning the triplet with the least first value. If there are still multiple such triplets with same first value, return the triplet with the least second value. If there are still multiple such triplets with same first and second values, return the triplet with the least third value. If there is no triplet that sums to target, return an empty array.
+
+```
 Sample 0
 Input
 nums: [1, 2, 3, 3, 4, 1, 1]
@@ -85,7 +87,7 @@ num: [1, 2, 3, 3, 4, 1, 1]
 target: 100
 Output
 []
-
+```
 
 You have to find all the permutations of integers from 1 to n without using the permutation related library functions in your code.
 Sample 0
