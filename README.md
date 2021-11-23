@@ -236,3 +236,16 @@ Q : 1
 Output
 1
 ```
+
+Given a collection of intervals, find out how many intervals have to be removed to ensure that no interval is overlapping over another. An interval is not considered overlapping if it starts where the previous one ends.
+```
+For e.g., [0, 1] and [1, 2] are not overlapping intervals while [0, 2] and [1, 2] are. Here’s an example:
+
+Input: [0, 3], [9, 12], [3, 8], [8, 10]
+Answer: 1
+In this case, if [8, 10] is removed, there will be no overlapping between the others. Here’s another example:
+
+Input: [0,5], [1, 2], [3, 5]
+Answer: 1
+In this case, if [0, 5] is removed, there will be no overlapping between the others.
+```
