@@ -1,3 +1,4 @@
+### problems
 All the subsets of an array
 
 All permutations of a list of chars
@@ -8,6 +9,7 @@ Quicksort with duplicates
 
 Given a binary tree, find the maximum path sum. The path may start and end at any node in the tree.
 
+### rotate digits
 We can rotate digits by 180 degrees to form new digits. 
 When 0, 1, 6, 8, 9 are rotated 180 degrees, they become 
 0, 1, 9, 8, 6 respectively. 
@@ -19,6 +21,7 @@ can be greater than the original number.)
 Given a positive integer N, return the number 
 of confusing numbers between 1 and N inclusive.
 
+### shortest transformation
 Given two words (beginWord and endWord), and a dictionary's word list, 
 find the length of shortest transformation sequence from beginWord to endWord, 
 such that: 
