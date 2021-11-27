@@ -284,3 +284,45 @@ s: aabaaa
 Output
 res: aaabaaa
 ```
+### Minimizing Largest Sum
+You are given an array nums (containing non-negative integers) and an integer m. You can split the original array nums into m non-empty continuous subarrays.
+
+There can be size of nums - 1Cm - 1 total ways to split the array nums into m subarrays.
+
+Consider a function f(way) which accepts a way to split an array nums hence m subarrays will be created, f(way) returns max(sumsubarray_1, sumsubarray_2, ...., sumsubarray_m).
+
+You have to find min(f(way1), f(way2),....., f(waytotal_ways)).
+
+Note: Sum of all elements of array nums is guaranteed to fit in a 32-bit integer.
+
+Sample 0
+```
+Input
+nums: [5, 6]
+m: 1
+
+Output
+11
+
+Explanation
+As the array can be splitted in only 1 array then it will be the original array nums only contaning sum 11.
+```
+Sample 1
+```
+Input
+nums: [7, 9, 9]
+m: 2
+
+Output
+16
+
+Explanation
+The array nums can be splitted in 2 subarrays in following ways:
+
+[7], [9,9]
+[7, 9], [9]
+
+The first split have sums of subarrays (7, 18), so max(7, 18) = 18.
+The second split have sums of subarrays (16, 9), so max(16, 9) = 16
+Our final answer is min(18, 16) = 16.
+```
