@@ -10,38 +10,6 @@ Quicksort with duplicates
 
 Given a binary tree, find the maximum path sum. The path may start and end at any node in the tree.
 
-### rotate digits
-We can rotate digits by 180 degrees to form new digits. 
-When 0, 1, 6, 8, 9 are rotated 180 degrees, they become 
-0, 1, 9, 8, 6 respectively. 
-When 2, 3, 4, 5, and 7 are rotated 180 degrees, 
-they become invalid. A confusing number is a number 
-that when rotated 180 degrees becomes a different number 
-with each digit valid.(Note that the rotated number 
-can be greater than the original number.) 
-Given a positive integer N, return the number 
-of confusing numbers between 1 and N inclusive.
-
-### shortest transformation
-Given two words (beginWord and endWord), and a dictionary's word list, 
-find the length of shortest transformation sequence from beginWord to endWord, 
-such that: 
-* Only one letter can be changed at a time and, 
-* Each transformed word must exist in the word list.
-
-Given a matrix of N rows and M columns. From m[i][j],
- we can move to m[i+1][j], if m[i+1][j] > m[i][j], or 
- can move to m[i][j+1] if m[i][j+1] > m[i][j]. 
- The task is print longest path length if we start from (0, 0).
-
-Given a robot cleaner in a room modeled as a grid. 
-Each cell in the grid can be empty or blocked. 
-The robot cleaner with 4 given APIs can move forward,
- turn left or turn right. Each turn it made is 90 degrees. 
- When it tries to move into a blocked cell, its bumper 
- sensor detects the obstacle and it stays on the current cell. 
- Design an algorithm to clean the entire room using only the 4 given APIs shown below." (Solution)
-
 
 Given an encoded string, return its decoded string.
 
@@ -76,6 +44,42 @@ You are given two non-empty linked lists representing two non-negative integers.
 
 Given a matrix and a target, return the number of non-empty submatrices that sum to target.
 
+### Rotate Digits
+We can rotate digits by 180 degrees to form new digits. 
+When 0, 1, 6, 8, 9 are rotated 180 degrees, they become 
+0, 1, 9, 8, 6 respectively. 
+When 2, 3, 4, 5, and 7 are rotated 180 degrees, 
+they become invalid. A confusing number is a number 
+that when rotated 180 degrees becomes a different number 
+with each digit valid.(Note that the rotated number 
+can be greater than the original number.) 
+Given a positive integer N, return the number 
+of confusing numbers between 1 and N inclusive.
+
+### Shortest Transformation
+Given two words (beginWord and endWord), and a dictionary's word list, 
+find the length of shortest transformation sequence from beginWord to endWord, 
+such that: 
+* Only one letter can be changed at a time and, 
+* Each transformed word must exist in the word list.
+
+### Longest Path
+Given a matrix of N rows and M columns. From m[i][j],
+ we can move to m[i+1][j], if m[i+1][j] > m[i][j], or 
+ can move to m[i][j+1] if m[i][j+1] > m[i][j]. 
+ The task is print longest path length if we start from (0, 0).
+
+### Robot Cleaner
+Given a robot cleaner in a room modeled as a grid. 
+Each cell in the grid can be empty or blocked. 
+The robot cleaner with 4 given APIs can move forward,
+ turn left or turn right. Each turn it made is 90 degrees. 
+ When it tries to move into a blocked cell, its bumper 
+ sensor detects the obstacle and it stays on the current cell. 
+ Design an algorithm to clean the entire room using only the 4 given APIs shown below." (Solution)
+
+
+### Three Sum
 Given an array of numbers and a target integer, find three elements from the array that sums up to target. Return the value of these three elements (0-based). (Note: This is different from Two Sum where you had to return the indices)
 The triplet of the values returned should be sorted. If multiple such values exist, break ties by returning the triplet with the least first value. If there are still multiple such triplets with same first value, return the triplet with the least second value. If there are still multiple such triplets with same first and second values, return the triplet with the least third value. If there is no triplet that sums to target, return an empty array.
 
@@ -93,7 +97,7 @@ target: 100
 Output
 []
 ```
-
+### All Permutations
 You have to find all the permutations of integers from 1 to n without using the permutation related library functions in your code.
 ```
 Sample 0
@@ -108,6 +112,7 @@ Output
 [ [ 1 , 2 , 3 ] , [ 1 , 3 , 2 ] , [ 2 , 1 , 3 ] , [ 2 , 3 , 1 ] , [ 3 , 2 , 1 ] , [ 3 , 1 , 2 ] ]
 ```
 
+### Smallest Supersequences 
 Given an array of array of integers arrs and a random permutation p of first n integers {1,2,...,n}. Find if the given permutation p is the smallest supersequence of arrs.
 A sequence is said to be a supersequence if it contains all arrays in arrs as subsequences.
 A supersequence A is said to be smaller than another supersequence B, if A has less length than B. If both have same length, lexicographically smaller sequence is smaller.
@@ -127,7 +132,7 @@ p:[1,3,2]
 Output
 true
 ```
-
+### Largest Rectangle 
 Given a binary matrix a comprising only 0's and 1's. You need to find the area of the largest rectangle containing only 1's.
 Note - Return the single integer which is the required area.
 ```
@@ -146,7 +151,7 @@ Largest Rectangle in Histogram
 [2, 1, 5, 6, 2, 3] 10
 ```
 
-Minimum Jumps
+### Minimum Jumps
 Given an array of non negative numbers, each element in the array reprents maximum jump length from that position. Initially you are at first position (0th index) of the array and you want to go to the last position. Find minimum number of jumps you need to make to reach the last position.
 Note that there is always a way to reach the last position.
 ```
@@ -164,6 +169,7 @@ Output
 2
 ```
 
+### Max Profit
 Given N jobs, where i-th job is scheduled to be done from startTime[i] to endTime[i], with a profit of profit[i].
 
 You need to output the maximum profit that can be made by selecting jobs such that, no two jobs are overlapping in the time range.
@@ -179,7 +185,7 @@ Output
 25
 ```
 
-Trapping 2D Rainwater
+### Trapping 2D Rainwater
 Rocky is an architect. He likes to build different unique structures.
 He made structure of pillars of the same width and breadth but having different heights in a region.
 He wants to find out, maximum volume of water the structure can hold when it rains.
@@ -214,7 +220,7 @@ Explanation
 Only pillar at (2,2) with height 2 can hold water of 4 cubic units.
 ```
 
-Best Cover of Array
+### Best Cover of Array
 Given an array A consisting of only 0s and 1s. You can perform the following operation on the array:
 choose any contiguous subarray of length at most K and change all the elements of the subarray to 1.
 You goal is to find the minimum number of 0s remaining in the array after performing the operation at most Q times.
@@ -240,7 +246,7 @@ Q : 1
 Output
 1
 ```
-
+### overlapping intervals 
 Given a collection of intervals, find out how many intervals have to be removed to ensure that no interval is overlapping over another. An interval is not considered overlapping if it starts where the previous one ends.
 ```
 For e.g., [0, 1] and [1, 2] are not overlapping intervals while [0, 2] and [1, 2] are. Here’s an example:
