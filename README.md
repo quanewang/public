@@ -3,7 +3,7 @@
 [Emphasis](#emphasis)  
 ...snip...    
 <a name="headers"/>
-## Headers
+### Headers
 
 ### problems
 All the subsets of an array
