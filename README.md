@@ -259,3 +259,28 @@ Input: [0,5], [1, 2], [3, 5]
 Answer: 1
 In this case, if [0, 5] is removed, there will be no overlapping between the others.
 ```
+
+
+### Shortest Palindrome
+Given a string s.
+
+You need to convert the string into a palindrome by appending any characters in front of the given string s.
+
+Return the single string res which is the shortest palindrome after this transformation.
+
+Sample 0
+```
+Input
+s: eedoc
+
+Output
+res: codeedoc
+```
+Sample 1
+```
+Input
+s: aabaaa
+
+Output
+res: aaabaaa
+```
