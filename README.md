@@ -326,3 +326,42 @@ The first split have sums of subarrays (7, 18), so max(7, 18) = 18.
 The second split have sums of subarrays (16, 9), so max(16, 9) = 16
 Our final answer is min(18, 16) = 16.
 ```
+
+### Coins in the Path
+There is a stone-path in Mario land. Mario will always start from the first stone and he wants to reach last stone with minimum cost.
+Each stone has a cost to jump on it given in the array. Mario has jump ability represented by steps i.e he can jump to any stone in range [ i + 1, i + steps ] when standing on stone at i'th-index.
+
+Given an integer array array of length N and an integer steps where,
+
+N = Number of stones
+array[i] = Cost to jump on ith-stone
+steps = Mario's jump ability
+
+Note: if array[i] == -1 then Mario can't jump on that stone.
+
+Return the path of indexes (0-based indexing) with the smallest cost. If there are multiple paths with the smallest cost, then return lexicographically smallest one.
+If no possible path is found then return an empty array.
+```
+Sample 0
+Input
+array: [1, 3, 2, -1, 1]
+steps: 2
+
+Output
+[0, 2, 4]
+
+Explanation
+There is only one minimum cost path possible starting from index-0 is 0, 2, 4 with cost 1 + 2 + 1 = 4
+
+Sample 1
+Input
+array: [2, 3, 5, 3, 1]
+steps: 3
+
+Output
+[0, 1, 4]
+
+Explanation
+There are two paths possible 0, 1, 4 and 0, 3, 4 with same cost 2 + 3 + 1 = 6.So lexicographically smaller path is our answer i.e 0, 1, 4.
+```
+
