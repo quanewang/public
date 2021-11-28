@@ -436,8 +436,7 @@ buildings: [[1,3,4]]
 Output
 [[1,4], [3,0]]
 ```
-### 
-Expression Calculator
+###  Expression Calculator
 Evaluate the given valid mathematical expression consisting of non-negative integers with operators +,*,-,/. You may assume, the answer can be evaluated using a 64-bit signed integer. Evaluation must follow the standard mathematical rules.
 ```
 Sample 0
