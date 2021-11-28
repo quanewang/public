@@ -365,3 +365,31 @@ Explanation
 There are two paths possible 0, 1, 4 and 0, 3, 4 with same cost 2 + 3 + 1 = 6.So lexicographically smaller path is our answer i.e 0, 1, 4.
 ```
 
+### Longest D-Subsequence
+You are given an array arr and integer d. Find longest non-decreasing subsequence of arr such that the difference between consecutive elements of the sequence is less than d.
+Value of d is small.
+Note - A subsequence is a sequence that can be derived from the given sequence by deleting zero or more elements without changing the order of the remaining elements.
+```
+Sample 0
+Input
+arr: [1]
+d: 1
+
+Output
+1
+
+Explanation
+Array only has a single sequence satisfying this property.
+
+Sample 1
+Input
+arr: [1, 3, 2, 4, 5]
+d: 2
+
+Output
+3
+
+Explanation
+Array only has a sequence [3, 4, 5] satisfying this property.
+
+```
