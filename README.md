@@ -10,6 +10,7 @@ Quicksort with duplicates
 
 Given a binary tree, find the maximum path sum. The path may start and end at any node in the tree.
 
+Binary insertion
 
 Given an encoded string, return its decoded string.
 
@@ -392,4 +393,46 @@ Output
 Explanation
 Array only has a sequence [3, 4, 5] satisfying this property.
 
+```
+### The Skyline Problem
+Skyline: A skyline is the outline or shape created by a city's overall structure, which is formed when the sky meets buildings or the land.
+
+You are given N rectangular buildings in a 2-dimensional city, your task is to compute the skyline of these buildings, eliminating hidden lines, when viewed from a distance.
+
+All buildings share common bottom and every building is represented by a triplet (left, right, height) where,
+‘left’: is x coordinate of left side (or wall).
+‘right’: is x coordinate of right side
+‘height’: is height of the building.
+
+A skyline is a collection of rectangular strips. As shown in the figure B, rectangular strip is represented as a pair (left, ht) (Red Points) where left is x coordinate of left side of strip and ht is height of strip.
+
+You should return all such points in increasing order of left(x-coordinate) along with the last point, which is termination point indicating end of skyline.
+The height of termination point is always zero.
+
+Note:
+There should not be any consecutive points with equal height in the output skyline.
+Eg: If the output skyline is [[1,3], [2,5], [3,5], [4,0]], it must be resolved by taking only the leftmost point and eliminating the rest with same height.
+So, the vaild output will be [[1,3], [2,5], [4,0]].
+
+FIGURE A Figure A FIGURE B Figure B
+Note:
+
+There will be atleast 1 building present.
+Height of each building will be atleast 1.
+Input buildings will be sorted in increasing order of left coordinate.
+```
+Sample 0
+Input
+buildings: [[1,3,4], [2,5,8], [4,8,2], [6,7,5]]
+
+Output
+[[1,4], [2,8], [5,2], [6,5], [7,2], [8,0]]
+Note: This Example is of the skyline shown in figure above.
+
+Sample 1
+Input
+buildings: [[1,3,4]]
+
+Output
+[[1,4], [3,0]]
 ```
