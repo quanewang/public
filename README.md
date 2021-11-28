@@ -550,3 +550,41 @@ s: "120-190*2/5+4"
 Output
 48
 ```
+
+### Search in rotated sorted array
+Given an array of integers nums of size N and an integer target.
+
+array nums is rotated at some pivot unknown to you beforehand.
+
+Example : [0, 1, 2, 4, 5, 6, 7] might become [4, 5, 6, 7, 0, 1, 2].
+
+You are given a target value to search. Find if the target exists in the array.
+
+You may assume no duplicate exists in the array.
+
+Note:
+
+Array nums was sorted in non-decreasing order before rotation.
+Do not sort the array.
+Expected a solution better than linear search.
+Do not use inbuilt functions.
+target and array elements can be positive, 0 or negative.
+```
+Sample 0
+Input
+nums = [4, 5, 6, 7, 0, 1, 2, 3]
+
+Target: 4
+
+Output
+true
+
+Sample 1
+Input
+nums = [5, 17, 100, 3]
+
+Target: 6
+
+Output
+false
+```
