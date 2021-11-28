@@ -45,7 +45,7 @@ You are given two non-empty linked lists representing two non-negative integers.
 
 Given a matrix and a target, return the number of non-empty submatrices that sum to target.
 ### Google 1
-#### Round 1:
+#### Round 1: Single Number-ii
 
 https://leetcode.com/problems/single-number-ii
 Given an integer array nums where every element appears three times except for one, which appears exactly once. Find the single element and return it.
@@ -70,20 +70,10 @@ Constraints:
 -231 <= nums[i] <= 231 - 1
 Each element in nums appears exactly three times except for one element which appears once.
 ```
-#### Round 2:
+#### Round 2: Decode String
 
 https://leetcode.com/problems/decode-string
 
-394. Decode String
-Medium
-
-6390
-
-280
-
-Add to List
-
-Share
 Given an encoded string, return its decoded string.
 
 The encoding rule is: k[encoded_string], where the encoded_string inside the square brackets is being repeated exactly k times. Note that k is guaranteed to be a positive integer.
