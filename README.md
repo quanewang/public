@@ -10,6 +10,9 @@ interviewbit
 leetcode
 * https://leetcode.com/discuss/interview-question/352460/Google-Online-Assessment-Questions
 
+geeksforgeeks
+* https://www.geeksforgeeks.org/n3-repeated-number-array-o1-space/
+
 ### Problems
 All the subsets of an array
 
