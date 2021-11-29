@@ -532,6 +532,25 @@ Then the rotated array becomes:
     [4, 2]
 ]
 ```
+
+### Majority Element
+Write a function which takes an array and prints the majority element (if it exists), otherwise prints “No Majority Element”. A majority element in an array A[] of size n is an element that appears more than n/2 times (and hence there is at most one such element). 
+
+Examples : 
+```
+Become a success story instead of just reading about them. Prepare for coding interviews at Amazon and other top product-based companies with our Amazon Test Series. Includes topic-wise practice questions on all important DSA topics along with 10 practice contests of 2 hours each. Designed by industry experts that will surely help you practice and sharpen your programming skills. Wait no more, start your preparation today!
+
+Input : {3, 3, 4, 2, 4, 4, 2, 4, 4}
+Output : 4
+Explanation: The frequency of 4 is 5 which is greater
+than the half of the size of the array size. 
+
+Input : {3, 3, 4, 2, 4, 4, 2, 4}
+Output : No Majority Element
+Explanation: There is no element whose frequency is
+greater than the half of the size of the array size.
+```
+
 ### N/3 Repeat Number
 
 You're given a read only array of n integers. Find out if any integer occurs more than n/3 times in the array in linear time and constant additional space.
