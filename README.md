@@ -58,106 +58,6 @@ Given a matrix and a target, return the number of non-empty submatrices that sum
 
 Add Two Numbers As Lists.
 
-
-
-### Google 1
-#### Round 1: Single Number-ii
-
-https://leetcode.com/problems/single-number-ii
-Given an integer array nums where every element appears three times except for one, which appears exactly once. Find the single element and return it.
-
-You must implement a solution with a linear runtime complexity and use only constant extra space.
-
- 
-```
-Example 1:
-
-Input: nums = [2,2,3,2]
-Output: 3
-Example 2:
-
-Input: nums = [0,1,0,1,0,1,99]
-Output: 99
- 
-
-Constraints:
-
-1 <= nums.length <= 3 * 104
--231 <= nums[i] <= 231 - 1
-Each element in nums appears exactly three times except for one element which appears once.
-```
-#### Round 2: Decode String
-
-https://leetcode.com/problems/decode-string
-
-Given an encoded string, return its decoded string.
-
-The encoding rule is: k[encoded_string], where the encoded_string inside the square brackets is being repeated exactly k times. Note that k is guaranteed to be a positive integer.
-
-You may assume that the input string is always valid; No extra white spaces, square brackets are well-formed, etc.
-
-Furthermore, you may assume that the original data does not contain any digits and that digits are only for those repeat numbers, k. For example, there won't be input like 3a or 2[4].
-
- 
-```
-Example 1:
-
-Input: s = "3[a]2[bc]"
-Output: "aaabcbc"
-Example 2:
-
-Input: s = "3[a2[c]]"
-Output: "accaccacc"
-Example 3:
-
-Input: s = "2[abc]3[cd]ef"
-Output: "abcabccdcdcdef"
-Example 4:
-
-Input: s = "abc3[cd]xyz"
-Output: "abccdcdcdxyz"
-```
-
-#### Round 3:
-
-Given a tree representation of a html parsed output, wherein every block is a node in the tree, find if two html docs contain the same text.
-
-#### Round 4:
-
-Given a 2D matrix M X N, support two operations:
-Query(row1, col1, row2, col2) such that I get the sum of all numbers in the rectangle ((row1, col1), (row1, col2), (row2, col1), (row2, col2)) and
-Update(row, col) to a new number
-
-And query is a very frequent operation and update is a rare operation, so query should be really fast, but update can be slower.
-
-Follow up: How would you solve this in a distributed fashion
-
-#### Round 5:
-
-https://leetcode.com/problems/toeplitz-matrix
-
-Given an m x n matrix, return true if the matrix is Toeplitz. Otherwise, return false.
-
-A matrix is Toeplitz if every diagonal from top-left to bottom-right has the same elements.
-
-```
-Example 1:
-Input: matrix = [[1,2,3,4],[5,1,2,3],[9,5,1,2]]
-Output: true
-Explanation:
-In the above grid, the diagonals are:
-"[9]", "[5, 5]", "[1, 1, 1]", "[2, 2, 2]", "[3, 3]", "[4]".
-In each diagonal all elements are the same, so the answer is True.
-Example 2:
-
-
-Input: matrix = [[1,2],[2,2]]
-Output: false
-Explanation:
-The diagonal "[1, 2]" has different elements.
-Follow-up: assume that the whole matrix cannot be fit in memory and should be read from a file, assume that a few rows and all columns can be read in, how to verify?
-```
-
 ### Rotate Digits
 We can rotate digits by 180 degrees to form new digits. 
 When 0, 1, 6, 8, 9 are rotated 180 degrees, they become 
@@ -615,7 +515,7 @@ You need to do this in place.
 Note that if you end up using an additional array, you will only receive partial score.
 
 Example:
-
+```
 If the array is
 
 [
@@ -628,3 +528,103 @@ Then the rotated array becomes:
     [3, 1],
     [4, 2]
 ]
+```
+
+
+### Google 1
+#### Round 1: Single Number-ii
+
+https://leetcode.com/problems/single-number-ii
+Given an integer array nums where every element appears three times except for one, which appears exactly once. Find the single element and return it.
+
+You must implement a solution with a linear runtime complexity and use only constant extra space.
+
+ 
+```
+Example 1:
+
+Input: nums = [2,2,3,2]
+Output: 3
+Example 2:
+
+Input: nums = [0,1,0,1,0,1,99]
+Output: 99
+ 
+
+Constraints:
+
+1 <= nums.length <= 3 * 104
+-231 <= nums[i] <= 231 - 1
+Each element in nums appears exactly three times except for one element which appears once.
+```
+#### Round 2: Decode String
+
+https://leetcode.com/problems/decode-string
+
+Given an encoded string, return its decoded string.
+
+The encoding rule is: k[encoded_string], where the encoded_string inside the square brackets is being repeated exactly k times. Note that k is guaranteed to be a positive integer.
+
+You may assume that the input string is always valid; No extra white spaces, square brackets are well-formed, etc.
+
+Furthermore, you may assume that the original data does not contain any digits and that digits are only for those repeat numbers, k. For example, there won't be input like 3a or 2[4].
+
+ 
+```
+Example 1:
+
+Input: s = "3[a]2[bc]"
+Output: "aaabcbc"
+Example 2:
+
+Input: s = "3[a2[c]]"
+Output: "accaccacc"
+Example 3:
+
+Input: s = "2[abc]3[cd]ef"
+Output: "abcabccdcdcdef"
+Example 4:
+
+Input: s = "abc3[cd]xyz"
+Output: "abccdcdcdxyz"
+```
+
+#### Round 3:
+
+Given a tree representation of a html parsed output, wherein every block is a node in the tree, find if two html docs contain the same text.
+
+#### Round 4:
+
+Given a 2D matrix M X N, support two operations:
+Query(row1, col1, row2, col2) such that I get the sum of all numbers in the rectangle ((row1, col1), (row1, col2), (row2, col1), (row2, col2)) and
+Update(row, col) to a new number
+
+And query is a very frequent operation and update is a rare operation, so query should be really fast, but update can be slower.
+
+Follow up: How would you solve this in a distributed fashion
+
+#### Round 5:
+
+https://leetcode.com/problems/toeplitz-matrix
+
+Given an m x n matrix, return true if the matrix is Toeplitz. Otherwise, return false.
+
+A matrix is Toeplitz if every diagonal from top-left to bottom-right has the same elements.
+
+```
+Example 1:
+Input: matrix = [[1,2,3,4],[5,1,2,3],[9,5,1,2]]
+Output: true
+Explanation:
+In the above grid, the diagonals are:
+"[9]", "[5, 5]", "[1, 1, 1]", "[2, 2, 2]", "[3, 3]", "[4]".
+In each diagonal all elements are the same, so the answer is True.
+Example 2:
+
+
+Input: matrix = [[1,2],[2,2]]
+Output: false
+Explanation:
+The diagonal "[1, 2]" has different elements.
+Follow-up: assume that the whole matrix cannot be fit in memory and should be read from a file, assume that a few rows and all columns can be read in, how to verify?
+```
