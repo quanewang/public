@@ -201,7 +201,26 @@ profit: [5, 2, 10, 20]
 Output
 25
 ```
+### Grid Unique Paths
 
+A robot is located at the top-left corner of an A x B grid (marked ‘Start’ in the diagram below).
+
+Path Sum: Example 1
+
+The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked ‘Finish’ in the diagram below).
+
+How many possible unique paths are there?
+
+Note: A and B will be such that the resulting answer fits in a 32 bit signed integer.
+
+Example :
+```
+Input : A = 2, B = 2
+Output : 2
+
+2 possible routes : (0, 0) -> (0, 1) -> (1, 1) 
+              OR  : (0, 0) -> (1, 0) -> (1, 1)
+```	      
 ### Trapping 2D Rainwater
 Rocky is an architect. He likes to build different unique structures.
 He made structure of pillars of the same width and breadth but having different heights in a region.
