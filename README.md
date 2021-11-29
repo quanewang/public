@@ -560,11 +560,35 @@ If there are multiple solutions, return any one.
 
 Example:
 ```
-Input: [1 2 3 1 1]
-Output: 1 
-1 occurs 3 times which is more than 5/3 times.
-```
+Input : [10, 10, 20, 30, 10, 10]
+Output : 10
+10 occurs 4 times which is more than 6/3.
 
+Input : [20, 30, 10, 10, 5, 4, 20, 1, 2]
+Output : -1
+```
+### Max Distance
+
+Given an array A of integers, find the maximum of j - i subjected to the constraint of A[i] <= A[j].
+
+```
+Example Input
+Input 1:
+
+ A = [3, 5, 4, 2]
+
+
+Example Output
+Output 1:
+
+ 2
+
+
+Example Explanation
+Explanation 1:
+
+Maximum value occurs for pair (3, 4).
+```
 ### Google 1
 #### Round 1: Single Number-ii
 
