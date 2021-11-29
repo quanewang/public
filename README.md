@@ -55,6 +55,11 @@ A group of two or more people wants to meet and minimize the total travel distan
 You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
 
 Given a matrix and a target, return the number of non-empty submatrices that sum to target.
+
+Add Two Numbers As Lists.
+
+
+
 ### Google 1
 #### Round 1: Single Number-ii
 
@@ -599,3 +604,27 @@ Target: 6
 Output
 false
 ```
+### Rotate Matrix
+
+You are given an n x n 2D matrix representing an image.
+
+Rotate the image by 90 degrees (clockwise).
+
+You need to do this in place.
+
+Note that if you end up using an additional array, you will only receive partial score.
+
+Example:
+
+If the array is
+
+[
+    [1, 2],
+    [3, 4]
+]
+Then the rotated array becomes:
+
+[
+    [3, 1],
+    [4, 2]
+]
