@@ -62,7 +62,38 @@ Given a matrix and a target, return the number of non-empty submatrices that sum
 Add Two Numbers As Lists.
 
 Given 2 non negative integers m and n, find gcd(m, n).
+### Next Smallest Palindrome!
 
+Given a numeric string A representing a large number you need to find the next smallest palindrome greater than this number.
+
+Problem Constraints
+1 <= |A| <= 100
+
+A doesn't start with zeroes and always contain digits from 0-9.
+
+Input Format
+First and only argument is an string A.
+
+Output Format
+Return a numeric string denoting the next smallest palindrome greater than A.
+```
+Example Input
+Input 1:
+
+ A = "23545"
+Input 2:
+
+ A = "999"
+
+
+Example Output
+Output 1:
+
+ "23632"
+Output 2:
+
+ "1001"
+```
 ### Rotate Digits
 We can rotate digits by 180 degrees to form new digits. 
 When 0, 1, 6, 8, 9 are rotated 180 degrees, they become 
