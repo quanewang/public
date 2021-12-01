@@ -94,6 +94,48 @@ Output 2:
 
  "1001"
 ```
+
+```
+class Solution:
+    # @param A : string
+    # @return a strings
+    def solve(self, A):
+        odd = len(A)%2==1
+        m = len(A)//2
+        if odd:
+          first = A[0:m]
+          second = A[m+1:len(A)]
+        else:
+          first = A[0:m-1]
+          second = A[m+1:len(A)]
+          if A[m]!=A[m-1]:
+              return first + max(A[m-1], A[m])+ max(A[m-1], A[m]) + first[::-1]
+        if first and second:
+          first_num = int(first)
+          second_num = int(second[::-1])
+          if int(first[::-1]) > int(second):
+            if odd:
+                return first+A[m]+first[::-1]
+            else:
+                return first+A[m-1]+A[m]+first[::-1]
+
+        if A[m]!='9':
+            if odd:
+                return first + str(int(A[m])+1) + first[::-1]    
+            else:
+                return first + str(int(A[m])+1) + str(int(A[m])+1) + first[::-1]    
+        found = False
+        for i in range(len(first)-1, -1, -1):
+            if i<'9':
+                first[i]=str(int(i)+1)
+                found=True
+        if found:
+          if odd:
+            return first + '0' + first[::-1]    
+          else:
+            return first + '00' + first[::-1]          
+        return '1'+'0'*(len(A)-1)+'1'
+```
 ### Rotate Digits
 We can rotate digits by 180 degrees to form new digits. 
 When 0, 1, 6, 8, 9 are rotated 180 degrees, they become 
