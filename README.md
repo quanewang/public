@@ -79,6 +79,50 @@ Sample Output
 NOTE: IF the number of elements in the merged array is even, then the median is the average of n / 2 th and n/2 + 1th element. 
 For example, if the array is [1 2 3 4], the median is (2 + 3) / 2.0 = 2.5
 ```
+```
+class Solution:
+    # @param A : tuple of integers
+    # @param B : tuple of integers
+    # @return a double
+    def binSearch(self, A, k):
+        l=0
+        r=len(A)-1
+        while l<r:
+            m = (l+r)//2
+            if A[m]==k:
+                l=m
+                r=m
+                break
+            if A[m]<k:
+                l = m+1
+            else:
+                r = m-1
+        return r
+    def findMedianSortedArrays(self, A, B):
+        l = len(A) + len(B)
+        i = (len(A) + len(B))//2
+        if l%2==0:
+            m1 = self._findMedianSortedArrays(A, B, i)
+            m2 = self._findMedianSortedArrays(A, B, i-1)
+            return (m1+m2)//2
+        else:
+            return self._findMedianSortedArrays(A, B, i)
+
+    def _findMedianSortedArrays(self, A, B, i=-1):
+
+        if not A:
+            return B[i]
+        if not B:
+            return A[i]
+        ma = len(A)//2
+        mb = self.binSearch(B, A[ma])
+        if ma+mb+1==i:
+            return A[ma]
+        elif ma+mb+1>i:
+            return self._findMedianSortedArrays(A[0:ma], B[0:mb+1], i)
+        else:
+            return self._findMedianSortedArrays(A[ma+1: len(A)], B[mb+1: len(B)], i-ma-mb-2)
+```
 
 ### Next Smallest Palindrome!
 
