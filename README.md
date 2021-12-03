@@ -62,6 +62,17 @@ Given a matrix and a target, return the number of non-empty submatrices that sum
 Add Two Numbers As Lists.
 
 Given 2 non negative integers m and n, find gcd(m, n).
+### Multiply Strings
+Given two numbers represented as strings, return multiplication of the numbers as a string.
+
+Note: The numbers can be arbitrarily large and are non-negative.
+
+Note2: Your answer should not have leading zeroes. For example, 00 is not a valid answer.
+
+For example, 
+```
+given strings "999", "999", your answer should be “998001”.
+```
 ### Allocate Books
 Given an array of integers A of size N and an integer B.
 
