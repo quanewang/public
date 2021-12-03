@@ -38,9 +38,6 @@ Given a string S and a string T, find the minimum window in S which will contain
 
 Given a list of query words, return the number of words that are stretchy." Note: see link for more details. 
 
-Given an array of words and a width maxWidth, format the text such that each line has exactly maxWidth characters and is fully (left and right) justified.
-
-
 Given a rows x cols binary matrix filled with 0's and 1's, find the largest rectangle containing only 1's and return its area.
 
 Your car starts at position 0 and speed +1 on an infinite number line. (Your car can go into negative positions.) Your car drives automatically according to a sequence of instructions A (accelerate) and R (reverse)...Now for some target position, say the length of the shortest sequence of instructions to get there." 
@@ -62,6 +59,26 @@ Given a matrix and a target, return the number of non-empty submatrices that sum
 Add Two Numbers As Lists.
 
 Given 2 non negative integers m and n, find gcd(m, n).
+### Justified Text
+Given an array of words and a length L, format the text such that each line has exactly L characters and is fully (left and right) justified. You should pack your words in a greedy approach; that is, pack as many words as you can in each line.
+
+Pad extra spaces ' ' when necessary so that each line has exactly L characters. Extra spaces between words should be distributed as evenly as possible. If the number of spaces on a line do not divide evenly between words, the empty slots on the left will be assigned more spaces than the slots on the right. For the last line of text, it should be left justified and no extra space is inserted between words.
+
+Your program should return a list of strings, where each string represents a single line.
+
+Example:
+```
+words: ["This", "is", "an", "example", "of", "text", "justification."]
+L: 16.
+Return the formatted lines as:
+[
+   "This    is    an",
+   "example  of text",
+   "justification.  "
+]
+```
+Note: Each word is guaranteed not to exceed L in length. 
+
 ### Multiply Strings
 Given two numbers represented as strings, return multiplication of the numbers as a string.
 
