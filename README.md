@@ -407,6 +407,27 @@ n: 3
 Output
 [ [ 1 , 2 , 3 ] , [ 1 , 3 , 2 ] , [ 2 , 1 , 3 ] , [ 2 , 3 , 1 ] , [ 3 , 2 , 1 ] , [ 3 , 1 , 2 ] ]
 ```
+### All Unique Permutations
+
+Given an array A of size N denoting collection of numbers that might contain duplicates, return all possible unique permutations.
+
+```
+Example Input
+Input 1: 
+A = [1, 1, 2]
+Input 2: 
+A = [1, 2]
+
+
+Example Output
+Output 1: 
+[ [1, 1, 2]
+  [1, 2, 1]
+  [2, 1, 1] ]
+Output 2: 
+[ [1, 2]
+  [2, 1] ]
+```
 
 ### Smallest Supersequences 
 Given an array of array of integers arrs and a random permutation p of first n integers {1,2,...,n}. Find if the given permutation p is the smallest supersequence of arrs.
