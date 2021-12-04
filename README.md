@@ -428,7 +428,31 @@ Output 2:
 [ [1, 2]
   [2, 1] ]
 ```
+### NQueens
+The n-queens puzzle is the problem of placing n queens on an n×n chessboard such that no two queens attack each other.
 
+N Queens: Example 1
+
+Given an integer n, return all distinct solutions to the n-queens puzzle.
+
+Each solution contains a distinct board configuration of the n-queens’ placement, where 'Q' and '.' both indicate a queen and an empty space respectively.
+
+For example,
+
+```
+There exist two distinct solutions to the 4-queens puzzle:
+[
+ [".Q..",  // Solution 1
+  "...Q",
+  "Q...",
+  "..Q."],
+
+ ["..Q.",  // Solution 2
+  "Q...",
+  "...Q",
+  ".Q.."]
+]
+```
 ### Smallest Supersequences 
 Given an array of array of integers arrs and a random permutation p of first n integers {1,2,...,n}. Find if the given permutation p is the smallest supersequence of arrs.
 A sequence is said to be a supersequence if it contains all arrays in arrs as subsequences.
