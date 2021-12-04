@@ -902,7 +902,17 @@ Return an array C, where C[i] is the maximum value of from A[i] to A[i+B-1].
 
 Note: If B > length of the array, return 1 element with the max of the array.
 ```
+### Window String
+Given a string S and a string T, find the minimum window in S which will contain all the characters in T in linear time complexity.
 
+Note that when the count of a character C in T is N, then the count of C in minimum window in S should be at least N.
+
+Example :
+```
+S = "ADOBECODEBANC"
+T = "ABC"
+Minimum window is "BANC"
+```
 ### Search in rotated sorted array
 Given an array of integers nums of size N and an integer target.
 
