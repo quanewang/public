@@ -670,7 +670,7 @@ Q : 1
 Output
 1
 ```
-### overlapping intervals 
+### Overlapping Intervals 
 Given a collection of intervals, find out how many intervals have to be removed to ensure that no interval is overlapping over another. An interval is not considered overlapping if it starts where the previous one ends.
 ```
 For e.g., [0, 1] and [1, 2] are not overlapping intervals while [0, 2] and [1, 2] are. Here’s an example:
@@ -913,6 +913,24 @@ S = "ADOBECODEBANC"
 T = "ABC"
 Minimum window is "BANC"
 ```
+### 4 Sum
+Given an array S of n integers, are there elements a, b, c, and d in S such that a + b + c + d = target? Find all unique quadruplets in the array which gives the sum of target.
+
+Note:
+
+Elements in a quadruplet (a,b,c,d) must be in non-descending order. (ie, a ≤ b ≤ c ≤ d)
+The solution set must not contain duplicate quadruplets.
+Example : 
+
+Given array S = {1 0 -1 0 -2 2}, and target = 0
+
+A solution set is:
+```
+    (-2, -1, 1, 2)
+    (-2,  0, 0, 2)
+    (-1,  0, 0, 1)
+```
+Also make sure that the solution set is lexicographically sorted.
 ### Search in rotated sorted array
 Given an array of integers nums of size N and an integer target.
 
