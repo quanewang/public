@@ -1049,9 +1049,9 @@ Example Explanation
 Explanation 1:
 
 Maximum value occurs for pair (3, 4).
-```
+
 ### Google 1
-#### Round 1: Single Number-ii
+Round 1: Single Number-ii
 
 https://leetcode.com/problems/single-number-ii
 Given an integer array nums where every element appears three times except for one, which appears exactly once. Find the single element and return it.
@@ -1076,7 +1076,7 @@ Constraints:
 -231 <= nums[i] <= 231 - 1
 Each element in nums appears exactly three times except for one element which appears once.
 ```
-#### Round 2: Decode String
+Round 2: Decode String
 
 https://leetcode.com/problems/decode-string
 
@@ -1108,11 +1108,11 @@ Input: s = "abc3[cd]xyz"
 Output: "abccdcdcdxyz"
 ```
 
-#### Round 3:
+Round 3:
 
 Given a tree representation of a html parsed output, wherein every block is a node in the tree, find if two html docs contain the same text.
 
-#### Round 4:
+Round 4:
 
 Given a 2D matrix M X N, support two operations:
 Query(row1, col1, row2, col2) such that I get the sum of all numbers in the rectangle ((row1, col1), (row1, col2), (row2, col1), (row2, col2)) and
@@ -1122,7 +1122,7 @@ And query is a very frequent operation and update is a rare operation, so query 
 
 Follow up: How would you solve this in a distributed fashion
 
-#### Round 5:
+Round 5:
 
 https://leetcode.com/problems/toeplitz-matrix
 
@@ -1146,4 +1146,19 @@ Output: false
 Explanation:
 The diagonal "[1, 2]" has different elements.
 Follow-up: assume that the whole matrix cannot be fit in memory and should be read from a file, assume that a few rows and all columns can be read in, how to verify?
+```
+```
+### Heap and Map
+#### Merge K Sorted Lists
+
+Merge k sorted linked lists and return it as one sorted list.
+
+Example :
+```
+1 -> 10 -> 20
+4 -> 11 -> 13
+3 -> 8 -> 9
+will result in
+
+1 -> 3 -> 4 -> 8 -> 9 -> 10 -> 11 -> 13 -> 20
 ```
