@@ -428,6 +428,42 @@ p:[1,3,2]
 Output
 true
 ```
+### Largest Rectangle in Histogram
+
+Given an array of integers A .
+
+A represents a histogram i.e A[i] denotes height of the ith histogram's bar. Width of each bar is 1.
+
+Find the area of the largest rectangle formed by the histogram.
+
+```
+
+Example Input
+Input 1:
+
+ A = [2, 1, 5, 6, 2, 3]
+Input 2:
+
+ A = [2]
+
+
+Example Output
+Output 1:
+
+ 10
+Output 2:
+
+ 2
+
+
+Example Explanation
+Explanation 1:
+
+The largest rectangle has area = 10 unit. Formed by A[3] to A[4].
+Explanation 2:
+
+Largest rectangle has area 2.
+```
 ### Largest Rectangle 
 Given a binary matrix a comprising only 0's and 1's. You need to find the area of the largest rectangle containing only 1's.
 Note - Return the single integer which is the required area.
