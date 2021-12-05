@@ -1209,3 +1209,17 @@ You are given 2 values. Find the lowest common ancestor of the two nodes represe
 No guarantee that val1 and val2 exist in the tree. If one value doesn’t exist in the tree then return -1.
 There are no duplicate values.
 You can use extra memory, helper functions, and can modify the node struct but, you can’t add a parent pointer.
+
+### Shortest Unique Prefix
+Find shortest unique prefix to represent each word in the list.
+
+Example:
+```
+Input: [zebra, dog, duck, dove]
+Output: {z, dog, du, dov}
+where we can see that
+zebra = z
+dog = dog
+duck = du
+dove = dov
+```
