@@ -1223,3 +1223,41 @@ dog = dog
 duck = du
 dove = dov
 ```
+```
+class MyNode:
+        def __init__(self):
+            self.h={}
+        def insert(self, a, i=0):
+              if a[i] in self.h and type(self.h[a[i]])==str:
+                  e=self.h[a[i]]
+                  c = MyNode()
+                  c.insert(e, i+1)
+                  c.insert(a, i+1)
+                  self.h[a[i]]=c
+              elif a[i] in self.h:
+                  self.h[a[i]].insert(a, i+1)
+              else:
+                self.h[a[i]] = a
+        def traverse(self, r={}, p=""):
+            for k in self.h.keys():
+                if type(self.h[k])==str:
+                    r[self.h[k]] = p+k
+                else:
+                    self.h[k].traverse(r, p+k)
+            return r
+
+class Solution:
+    # @param A : list of strings
+    # @return a list of strings
+    def prefix(self, A):
+        t = MyNode()
+        for a in A:
+            t.insert(a)
+        h = t.traverse()
+        result=[]
+        for a in A:
+            result.append(h[a])
+        return result
+
+
+```
