@@ -1043,12 +1043,7 @@ Example Output
 Output 1:
 
  2
-
-
-Example Explanation
-Explanation 1:
-
-Maximum value occurs for pair (3, 4).
+```
 
 ### Google 1
 Round 1: Single Number-ii
@@ -1057,7 +1052,6 @@ https://leetcode.com/problems/single-number-ii
 Given an integer array nums where every element appears three times except for one, which appears exactly once. Find the single element and return it.
 
 You must implement a solution with a linear runtime complexity and use only constant extra space.
-
  
 ```
 Example 1:
@@ -1076,6 +1070,7 @@ Constraints:
 -231 <= nums[i] <= 231 - 1
 Each element in nums appears exactly three times except for one element which appears once.
 ```
+
 Round 2: Decode String
 
 https://leetcode.com/problems/decode-string
@@ -1147,6 +1142,29 @@ Explanation:
 The diagonal "[1, 2]" has different elements.
 Follow-up: assume that the whole matrix cannot be fit in memory and should be read from a file, assume that a few rows and all columns can be read in, how to verify?
 ```
+
+### Array
+#### Order Of People Heights
+You are given the following :
+
+A positive number N
+Heights : A list of heights of N persons standing in a queue
+Infronts : A list of numbers corresponding to each person (P) that gives the number of persons who are taller than P and standing in front of P
+You need to return  list of actual order of persons’s height
+
+Consider that heights will be unique
+
+Example
+```
+Input : 
+Heights: 5 3 2 6 1 4
+InFronts: 0 1 2 0 3 2
+Output : 
+actual order is: 5 3 2 1 6 4 
+So, you can see that for the person with height 5, there is no one taller than him who is in front of him, and hence Infronts has 0 for him.
+
+For person with height 3, there is 1 person ( Height : 5 ) in front of him who is taller than him.
+
 ```
 ### Heap and Map
 #### Merge K Sorted Lists
