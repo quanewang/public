@@ -1275,3 +1275,13 @@ Note:
 
 A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.
 Return 0 / 1 ( 0 for false, 1 for true ) for this problem
+
+### Binary Search
+### Bit Manipulation
+### Linked Lists
+### Stacks and Queues
+### Backtracking
+### Dynamic Programming
+### Greedy Algorithm
+### Graph
+### Puzzles
