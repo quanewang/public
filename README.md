@@ -534,23 +534,6 @@ Explanation 2:
 
 Largest rectangle has area 2.
 ```
-### Max Rectangle in Binary Matrix 
-Given a 2D binary matrix filled with 0’s and 1’s, find the largest rectangle containing all ones and return its area.
-
-Bonus if you can solve it in O(n^2) or less.
-
-Example :
-```
-A : [  1 1 1
-       0 1 1
-       1 0 0 
-    ]
-
-Output : 4 
-```
-As the max area rectangle is created by the 2x2 rectangle created by (0,1), (0,2), (1,1) and (1,2)
-
-https://www.interviewbit.com/problems/max-rectangle-in-binary-matrix/
 
 ### Minimum Jumps
 Given an array of non negative numbers, each element in the array reprents maximum jump length from that position. Initially you are at first position (0th index) of the array and you want to go to the last position. Find minimum number of jumps you need to make to reach the last position.
@@ -606,40 +589,6 @@ Output : 2
               OR  : (0, 0) -> (1, 0) -> (1, 1)
 ```
 
-### Trapping 2D Rainwater
-Rocky is an architect. He likes to build different unique structures.
-He made structure of pillars of the same width and breadth but having different heights in a region.
-He wants to find out, maximum volume of water the structure can hold when it rains.
-Given N x M matrix heights where,
-heights[ i ][ j ] = height of pillar at ( i, j )
-Return the maximum volume of water the structure can hold.
-```
-Sample 0
-Input
-heights:
-
-	[
-		[5, 5, 5, 5],
-		[5, 0, 0, 5],
-		[5, 0, 0, 5],
-		[5, 5, 5, 5]
-	]
-Output
-20
-Sample 1
-Input
-heights:
-	[
-		[1, 2, 5, 9],
-		[3, 2, 6, 11],
-		[4, 9, 2, 7],
-		[7, 8, 9, 10]
-	]
-Output
-4
-Explanation
-Only pillar at (2,2) with height 2 can hold water of 4 cubic units.
-```
 
 ### Best Cover of Array
 Given an array A consisting of only 0s and 1s. You can perform the following operation on the array:
@@ -965,31 +914,6 @@ Target: 6
 Output
 false
 ```
-### Rotate Matrix
-
-You are given an n x n 2D matrix representing an image.
-
-Rotate the image by 90 degrees (clockwise).
-
-You need to do this in place.
-
-Note that if you end up using an additional array, you will only receive partial score.
-
-Example:
-```
-If the array is
-
-[
-    [1, 2],
-    [3, 4]
-]
-Then the rotated array becomes:
-
-[
-    [3, 1],
-    [4, 2]
-]
-```
 
 ### Majority Element
 Write a function which takes an array and prints the majority element (if it exists), otherwise prints “No Majority Element”. A majority element in an array A[] of size n is an element that appears more than n/2 times (and hence there is at most one such element). 
@@ -1257,4 +1181,81 @@ class Solution:
         return result
 
 
+```
+### 2D Matrix
+#### Max Rectangle in Binary Matrix 
+Given a 2D binary matrix filled with 0’s and 1’s, find the largest rectangle containing all ones and return its area.
+
+Bonus if you can solve it in O(n^2) or less.
+
+Example :
+```
+A : [  1 1 1
+       0 1 1
+       1 0 0 
+    ]
+
+Output : 4 
+```
+As the max area rectangle is created by the 2x2 rectangle created by (0,1), (0,2), (1,1) and (1,2)
+
+https://www.interviewbit.com/problems/max-rectangle-in-binary-matrix/
+#### Trapping 2D Rainwater
+Rocky is an architect. He likes to build different unique structures.
+He made structure of pillars of the same width and breadth but having different heights in a region.
+He wants to find out, maximum volume of water the structure can hold when it rains.
+Given N x M matrix heights where,
+heights[ i ][ j ] = height of pillar at ( i, j )
+Return the maximum volume of water the structure can hold.
+```
+Sample 0
+Input
+heights:
+
+	[
+		[5, 5, 5, 5],
+		[5, 0, 0, 5],
+		[5, 0, 0, 5],
+		[5, 5, 5, 5]
+	]
+Output
+20
+Sample 1
+Input
+heights:
+	[
+		[1, 2, 5, 9],
+		[3, 2, 6, 11],
+		[4, 9, 2, 7],
+		[7, 8, 9, 10]
+	]
+Output
+4
+Explanation
+Only pillar at (2,2) with height 2 can hold water of 4 cubic units.
+```
+#### Rotate Matrix
+
+You are given an n x n 2D matrix representing an image.
+
+Rotate the image by 90 degrees (clockwise).
+
+You need to do this in place.
+
+Note that if you end up using an additional array, you will only receive partial score.
+
+Example:
+```
+If the array is
+
+[
+    [1, 2],
+    [3, 4]
+]
+Then the rotated array becomes:
+
+[
+    [3, 1],
+    [4, 2]
+]
 ```
