@@ -38,8 +38,6 @@ Given a string S and a string T, find the minimum window in S which will contain
 
 Given a list of query words, return the number of words that are stretchy." Note: see link for more details. 
 
-Given a rows x cols binary matrix filled with 0's and 1's, find the largest rectangle containing only 1's and return its area.
-
 Your car starts at position 0 and speed +1 on an infinite number line. (Your car can go into negative positions.) Your car drives automatically according to a sequence of instructions A (accelerate) and R (reverse)...Now for some target position, say the length of the shortest sequence of instructions to get there." 
 
 Given strings S and T, find the minimum (contiguous) substring W of S, so that T is a subsequence of W. If there is no such window in S that covers all characters in T, return the empty string "". If there are multiple such minimum-length windows, return the one with the left-most starting index.
@@ -536,24 +534,23 @@ Explanation 2:
 
 Largest rectangle has area 2.
 ```
-### Largest Rectangle 
-Given a binary matrix a comprising only 0's and 1's. You need to find the area of the largest rectangle containing only 1's.
-Note - Return the single integer which is the required area.
+### Max Rectangle in Binary Matrix 
+Given a 2D binary matrix filled with 0’s and 1’s, find the largest rectangle containing all ones and return its area.
+
+Bonus if you can solve it in O(n^2) or less.
+
+Example :
 ```
-Sample 0
-Input
-[[1,1]]
-Output
-2
-Sample 1
-Input
-[[1,0]]
-Output
-1
-Largest Rectangle in Histogram
-[2, 3, 4, 2, 2] 10
-[2, 1, 5, 6, 2, 3] 10
+A : [  1 1 1
+       0 1 1
+       1 0 0 
+    ]
+
+Output : 4 
 ```
+As the max area rectangle is created by the 2x2 rectangle created by (0,1), (0,2), (1,1) and (1,2)
+
+https://www.interviewbit.com/problems/max-rectangle-in-binary-matrix/
 
 ### Minimum Jumps
 Given an array of non negative numbers, each element in the array reprents maximum jump length from that position. Initially you are at first position (0th index) of the array and you want to go to the last position. Find minimum number of jumps you need to make to reach the last position.
