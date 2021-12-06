@@ -1335,6 +1335,107 @@ Explanation 2:
         
     Note: "_" marks the removed character.
 ```
+
+```
+class Solution:
+    # @param A : string
+    # @param B : string
+    # @return an integer
+    def numDistinct(self, A, B, i=0, memo={}):
+        k = self.k(A, i)
+        if self.compare(A, B):
+            result = 1
+        elif len(k)<len(B):
+            result = 0
+        elif i >= len(A):
+            return 0
+        elif k in memo:
+            # print(k, A, memo[k])
+            return memo[k]
+        else:
+            r1 = self.numDistinct(A, B, i+1, memo)
+            r2 = self.numDistinct(A[0:i]+'_'+A[i+1:len(A)], B, i+1, memo)
+            result = r1+r2
+        memo[k]=result
+        return result
+
+    def compare(self, A, B):
+        A = A.replace('_','').split(":")[0]
+        return A==B
+
+    def k(self, A, i):
+        return A.replace('_','')+":"+str(i)
+
+
+s = Solution()
+A="aaaababbababbaabbaaababaaabbbaaabbb"
+B="bbababa"
+print(s.numDistinct(A, B))
+#22113
+
+"""
+bbabbb:32 ____b_b________________________abbb 0
+bbbbb:33 ____b_b_________________________bbb 0
+bbbb:34 ____b_b__________________________bb 0
+bbababbaabbaaababaaabbbaaabbb:8 ____b__bababbaabbaaababaaabbbaaabbb 2400
+bababbaabbaaababaaabbbaaabbb:9 ____b___ababbaabbaaababaaabbbaaabbb 0
+bbabbaabbaaababaaabbbaaabbb:10 ____b____babbaabbaaababaaabbbaaabbb 1473
+babbaabbaaababaaabbbaaabbb:11 ____b_____abbaabbaaababaaabbbaaabbb 0
+bbbaabbaaababaaabbbaaabbb:12 ____b______bbaabbaaababaaabbbaaabbb 804
+bbaabbaaababaaabbbaaabbb:13 ____b_______baabbaaababaaabbbaaabbb 804
+baabbaaababaaabbbaaabbb:14 ____b________aabbaaababaaabbbaaabbb 0
+babbaaababaaabbbaaabbb:15 ____b_________abbaaababaaabbbaaabbb 0
+bbbaaababaaabbbaaabbb:16 ____b__________bbaaababaaabbbaaabbb 234
+bbaaababaaabbbaaabbb:17 ____b___________baaababaaabbbaaabbb 234
+baaababaaabbbaaabbb:18 ____b____________aaababaaabbbaaabbb 0
+baababaaabbbaaabbb:19 ____b_____________aababaaabbbaaabbb 0
+bababaaabbbaaabbb:20 ____b______________ababaaabbbaaabbb 0
+bbabaaabbbaaabbb:21 ____b_______________babaaabbbaaabbb 27
+babaaabbbaaabbb:22 ____b________________abaaabbbaaabbb 0
+bbaaabbbaaabbb:23 ____b_________________baaabbbaaabbb 0
+baaabbbaaabbb:24 ____b__________________aaabbbaaabbb 0
+baabbbaaabbb:25 ____b___________________aabbbaaabbb 0
+babbbaaabbb:26 ____b____________________abbbaaabbb 0
+bbbbaaabbb:27 ____b_____________________bbbaaabbb 0
+bbbaaabbb:28 ____b______________________bbaaabbb 0
+bbaaabbb:29 ____b_______________________baaabbb 0
+baaabbb:30 ____b________________________aaabbb 0
+baabbb:31 ____b_________________________aabbb 0
+babbb:32 ____b__________________________abbb 0
+bbbb:33 ____b___________________________bbb 0
+abbababbaabbaaababaaabbbaaabbb:6 _____abbababbaabbaaababaaabbbaaabbb 0
+bbababbaabbaaababaaabbbaaabbb:7 ______bbababbaabbaaababaaabbbaaabbb 5976
+bababbaabbaaababaaabbbaaabbb:8 _______bababbaabbaaababaaabbbaaabbb 3576
+ababbaabbaaababaaabbbaaabbb:9 ________ababbaabbaaababaaabbbaaabbb 0
+babbaabbaaababaaabbbaaabbb:10 _________babbaabbaaababaaabbbaaabbb 2103
+abbaabbaaababaaabbbaaabbb:11 __________abbaabbaaababaaabbbaaabbb 0
+bbaabbaaababaaabbbaaabbb:12 ___________bbaabbaaababaaabbbaaabbb 1299
+baabbaaababaaabbbaaabbb:13 ____________baabbaaababaaabbbaaabbb 495
+aabbaaababaaabbbaaabbb:14 _____________aabbaaababaaabbbaaabbb 0
+abbaaababaaabbbaaabbb:15 ______________abbaaababaaabbbaaabbb 0
+bbaaababaaabbbaaabbb:16 _______________bbaaababaaabbbaaabbb 261
+baaababaaabbbaaabbb:17 ________________baaababaaabbbaaabbb 27
+aaababaaabbbaaabbb:18 _________________aaababaaabbbaaabbb 0
+aababaaabbbaaabbb:19 __________________aababaaabbbaaabbb 0
+ababaaabbbaaabbb:20 ___________________ababaaabbbaaabbb 0
+babaaabbbaaabbb:21 ____________________babaaabbbaaabbb 0
+abaaabbbaaabbb:22 _____________________abaaabbbaaabbb 0
+baaabbbaaabbb:23 ______________________baaabbbaaabbb 0
+aaabbbaaabbb:24 _______________________aaabbbaaabbb 0
+aabbbaaabbb:25 ________________________aabbbaaabbb 0
+abbbaaabbb:26 _________________________abbbaaabbb 0
+bbbaaabbb:27 __________________________bbbaaabbb 0
+bbaaabbb:28 ___________________________bbaaabbb 0
+baaabbb:29 ____________________________baaabbb 0
+aaabbb:30 _____________________________aaabbb 0
+aabbb:31 ______________________________aabbb 0
+abbb:32 _______________________________abbb 0
+22113
+
+Process finished with exit code 0
+"""
+
+```
 ### Greedy Algorithm
 ### Graph
 ### Puzzles
