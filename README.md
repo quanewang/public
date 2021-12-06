@@ -1436,6 +1436,32 @@ Process finished with exit code 0
 """
 
 ```
+#### Palindrome Partitioning II
+
+Given a string A, partition A such that every substring of the partition is a palindrome.
+
+Return the minimum cuts needed for a palindrome partitioning of A.
+
+Examples:
+```
+Input 1:
+    A = "aba"
+
+Output 1:
+    0
+
+Explanation 1:
+    "aba" is already a palindrome, so no cuts are needed.
+
+Input 2:
+    A = "aab"
+    
+Output 2:
+    1
+
+Explanation 2:
+    Return 1 since the palindrome partitioning ["aa","b"] could be produced using 1 cut.
+```
 ### Greedy Algorithm
 ### Graph
 ### Puzzles
