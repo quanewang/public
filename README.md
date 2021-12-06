@@ -1520,6 +1520,33 @@ isMatch("ab", ".*") → 1
 isMatch("aab", "c*a*b") → 1
 Return 0 / 1 ( 0 for false, 1 for true ) for this problem
 ```
+#### Interleaving Strings
+Given A, B, C, find whether C is formed by the interleaving of A and B.
+
+Examples:
+```
+Input 1:
+    A = "aabcc"
+    B = "dbbca"
+    C = "aadbbcbcac"
+
+Output 1:
+    1
+    
+Explanation 1:
+    "aa" (from A) + "dbbc" (from B) + "bc" (from A) + "a" (from B) + "c" (from A)
+
+Input 2:
+    A = "aabcc"
+    B = "dbbca"
+    C = "aadbbbaccc"
+
+Output 2:
+    0
+
+Explanation 2:
+    It is not possible to get C by interleaving A and B.
+```    
 ### Greedy Algorithm
 ### Graph
 ### Puzzles
