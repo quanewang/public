@@ -1569,6 +1569,25 @@ Output 2:
 Explanation 2:
     It is not possible to get C by interleaving A and B.
 ```    
+### Recursive
+#### Repeating Sub-Sequence
+Given a string A, find length of the longest repeating sub-sequence such that the two subsequence don’t have same string character at same position,
+
+i.e., any i’th character in the two subsequences shouldn’t have the same index in the original string.
+
+NOTE: Sub-sequence length should be greater than or equal to 2.
+
+Example Input
+```
+Input 1:
+
+ A = "aabebcdd"
+
+Example Output
+Output 1:
+
+ 2 (abd abd)
+```
 ### Greedy Algorithm
 ### Graph
 ### Puzzles
