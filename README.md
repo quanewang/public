@@ -1676,6 +1676,7 @@ ending up at i again.
 Return the minimum starting gas station's index if you can travel around the circuit once, otherwise return -1.
 
 For Example
+
 ```
 Input 1:
     A =  [1, 2]
@@ -1685,6 +1686,16 @@ Output 1:
     Explanation 1:
         If you start from index 0, you can fill in A[0] = 1 amount of gas. Now your tank has 1 unit of gas. But you need B[0] = 2 gas to travel to station 1. 
         If you start from index 1, you can fill in A[1] = 2 amount of gas. Now your tank has 2 units of gas. You need B[1] = 1 gas to get to station 0. So, you travel to station 0 and still have 1 unit of gas left over. You fill in A[0] = 1 unit of additional gas, making your current gas = 2. It costs you B[0] = 2 to get to station 1, which you do and complete the circuit. 
-```	
+
+```
+#### Majority Element
+Given an array of size n, find the majority element. The majority element is the element that appears more than floor(n/2) times.
+You may assume that the array is non-empty and the majority element always exist in the array.
+
+Example :
+```
+Input : [2, 1, 2]
+Return  : 2 which occurs 2 times which is greater than 3/2.
+```
 ### Graph
 ### Puzzles
