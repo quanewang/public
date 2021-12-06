@@ -1569,6 +1569,31 @@ Output 2:
 Explanation 2:
     It is not possible to get C by interleaving A and B.
 ```    
+#### Shortest common superstring
+Given a set of strings, A of length N.
+
+Return the length of smallest string which has all the strings in the set as substring.
+
+Example:
+```
+Input 1:
+    A = ["aaaa", "aa"]
+
+Output 1:
+    4
+
+Explanation 1:
+    Shortest string: "aaaa"
+
+Input 2:
+    A = ["abcd", "cdef", "fgh", "de"]
+
+Output 2:
+    8
+
+Explanation 2:
+    Shortest string: "abcdefgh"
+```    
 ### Recursive
 #### Repeating Sub-Sequence
 Given a string A, find length of the longest repeating sub-sequence such that the two subsequence don’t have same string character at same position,
