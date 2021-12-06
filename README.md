@@ -1497,6 +1497,29 @@ Explanation 2:
     => Operation 1: Replace s with t.
     => Operation 2: Insert i.
 ```
+#### Regular Expression II
+Implement regular expression matching with support for '.' and '*'.
+
+'.' Matches any single character.
+
+'*' Matches zero or more of the preceding element.
+
+The matching should cover the entire input string (not partial).
+
+The function prototype should be:
+
+int isMatch(const char *s, const char *p)
+Some examples:
+```
+isMatch("aa","a") → 0
+isMatch("aa","aa") → 1
+isMatch("aaa","aa") → 0
+isMatch("aa", "a*") → 1
+isMatch("aa", ".*") → 1
+isMatch("ab", ".*") → 1
+isMatch("aab", "c*a*b") → 1
+Return 0 / 1 ( 0 for false, 1 for true ) for this problem
+```
 ### Greedy Algorithm
 ### Graph
 ### Puzzles
