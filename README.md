@@ -1779,3 +1779,17 @@ a third 5 minutes,
 the last it takes 10 minutes to cross the bridge.
 When two people cross the bridge together (sharing the flashlight), they both walk at the slower person’s pace. What is the minimum time required for all 4 to cross the bridge.
 ```
+#### Eggs and Building
+
+There is a building of 100 floors
+
+If an egg drops from the Nth floor or above it will break. If it’s dropped from any floor below, it will not break. You’re given 2 eggs. Find N, while minimizing the number of drops for the worst case.
+
+These are very strong eggs, because they can be dropped multiple times without breaking as long as they are dropped from floors below their “threshold” floor, floor N. But once an egg is dropped from a floor above it’s threshold floor, it will break.
+
+Output the minimum number of drops required to figure out N.
+
+#### Ratio of Boys and Girls
+
+In a country where everyone wants a kid with a specific gender (assuming only 2 genders), each family continues having babies till they have a kid with the expected gender. After some time, what is the proportion of boys to girls in the country? (Assuming probability of having a boy or a girl is the same)
+
