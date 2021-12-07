@@ -1087,6 +1087,16 @@ So, you can see that for the person with height 5, there is no one taller than h
 For person with height 3, there is 1 person ( Height : 5 ) in front of him who is taller than him.
 
 ```
+#### Move Zeros To End
+Given a static-sized array of integers arr, move all zeroes in the array to the end of the array. You should preserve the relative order of items in the array.
+
+We should implement a solution that is more efficient than a naive brute force.
+
+Examples:
+```
+input:  arr = [1, 10, 0, 2, 8, 3, 0, 0, 6, 4, 0, 5, 7, 0]
+output: [1, 10, 2, 8, 3, 6, 4, 5, 7, 0, 0, 0, 0, 0]
+```
 ### Heap and Map
 #### Merge K Sorted Lists
 
