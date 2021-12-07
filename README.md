@@ -1,6 +1,6 @@
 ### Sources
 
-coding practice
+practice
 * https://leetcode.com/
 * https://www.hackerrank.com/
 * https://www.geeksforgeeks.org
