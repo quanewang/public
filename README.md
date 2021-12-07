@@ -8,7 +8,7 @@ interviewbit
 * https://www.interviewbit.com/facebook-interview-questions/#questions
 
 leetcode
-* https://leetcode.com/discuss/interview-question/352460/Google-Online-Assessment-Questions
+* https://leetcode.com/problemset/all/?sorting=W3sic29ydE9yZGVyIjoiREVTQ0VORElORyIsIm9yZGVyQnkiOiJESUZGSUNVTFRZIn1d&difficulty=HARD&page=1
 
 geeksforgeeks
 * https://www.geeksforgeeks.org/n3-repeated-number-array-o1-space/
@@ -1324,7 +1324,19 @@ key: 5, low = 2 and high = 9
 key: 20, low = 10 and high = 10
 
 
-### Bit Manipulation
+### Bits and Digits
+#### Number of Digit One
+Given an integer n, count the total number of digit 1 appearing in all non-negative integers less than or equal to n.
+Example 1:
+```
+Input: n = 13
+Output: 6
+Example 2:
+
+Input: n = 0
+Output: 0
+```
+https://leetcode.com/problems/number-of-digit-one/
 ### Linked Lists
 ### Stacks and Queues
 #### Longest valid Parentheses
