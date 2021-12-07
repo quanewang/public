@@ -1657,6 +1657,32 @@ Output 1:
 
  2 (abd abd)
 ```
+#### Word Ladder I
+
+Given two words A and B, and a dictionary, C, find the length of shortest transformation sequence from A to B, such that:
+
+You must change exactly one character in every transformation.
+Each intermediate word must exist in the dictionary.
+Note:
+
+Return 0 if there is no such transformation sequence.
+All words have the same length.
+All words contain only lowercase alphabetic characters.
+
+Example :
+```
+Input 1:
+    A = "hit"
+    B = "cog"
+    C = ["hot", "dot", "dog", "lot", "log"]
+
+Output 1:
+    5
+
+Explanation 1:
+    "hit" -> "hot" -> "dot" -> "dog" -> "cog"
+```
+
 ### Greedy Algorithm
 #### Gas Station
 Given two integer arrays A and B of size N.
