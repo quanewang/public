@@ -1334,6 +1334,35 @@ Input: n = 0
 Output: 0
 ```
 https://leetcode.com/problems/number-of-digit-one/
+
+```
+class Solution(object):
+    def countDigitOne(self, m):
+        i = 0
+        remainder=0
+        total = 0
+        while m:
+            r = m % 10
+            m = m // 10
+
+            # (m) d_i (remainder)
+            # total ones:
+            #     (m) * 10^i + 10^i, if d_i>1
+            #     (m) * 10^i + remainder, if d_i==1
+            total += m * int(pow(10, i))
+
+            if r == 1 and i>0:
+                total = total + remainder + 1
+            elif r > 1 and i>0:
+                total = total + int(pow(10, i))
+            remainder = remainder + int(r*pow(10,i))
+
+            i += 1
+        return total
+
+s = Solution()
+print(s.countDigitOne(99))
+```
 ### Linked Lists
 ### Stacks and Queues
 #### Longest valid Parentheses
