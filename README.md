@@ -999,7 +999,7 @@ The encoding rule is: k[encoded_string], where the encoded_string inside the squ
 
 You may assume that the input string is always valid; No extra white spaces, square brackets are well-formed, etc.
 
-Furthermore, you may assume that the original data does not contain any digits and that digits are only for those repeat numbers, k. For example, there won't be input like 3a or 2[4].
+Furthermore, you may assume that the original data does not contain any and that digits are only for those repeat numbers, k. For example, there won't be input like 3a or 2[4].
 
  
 ```
@@ -1321,7 +1321,7 @@ key: 5, low = 2 and high = 9
 key: 20, low = 10 and high = 10
 
 
-### Bits and Digits
+### Math
 #### Number of Digit One
 Given an integer n, count the total number of digit 1 appearing in all non-negative integers less than or equal to n.
 Example 1:
