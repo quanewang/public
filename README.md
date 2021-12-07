@@ -1788,6 +1788,38 @@ A height balanced BST  :
     /   \
    1     3
 ```
+#### Capture Regions on Board
+
+Given a 2D character matrix A of size N x M, containing 'X' and 'O', capture all regions surrounded by 'X'.
+
+A region is captured by flipping all 'O's into 'X's in that surrounded region.
+
+```
+Example Input
+Input 1:
+
+ A = [  [X, X, X, X],
+        [X, O, O, X],
+        [X, X, O, X],
+        [X, O, X, X]
+     ]
+
+
+Example Output
+Output 1:
+
+ A = [  [X, X, X, X],
+        [X, X, X, X],
+        [X, X, X, X],
+        [X, O, X, X]
+     ]
+
+
+Example Explanation
+Explanation 1:
+
+ 'O' in (4,2) is not surrounded by X from below.
+``` 
 ### Puzzles
 #### Cross the Bridge
 
