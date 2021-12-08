@@ -84,9 +84,10 @@ You can only swap the gap and a number, in the end, put the gap at the end.
 Given a list L of video names and their watch rates, write a function that will return the videos with the top 10 watch rates. Video names may appear more than once. Example:
 ```
 L = [(‘abc’, 10), (‘def’, 15), (‘ghi’, 10), (‘abc’, 12), …, (‘xyz’, 100)]
-The function should return [‘xyz’, ‘abc’, …, ‘def’, ‘ghi’]
 ```
+The function should return [‘xyz’, ‘abc’, …, ‘def’, ‘ghi’]
 
+	
 ### Sort List
 Sort a linked list in O(n log n) time using constant space complexity.
 
