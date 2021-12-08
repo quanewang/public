@@ -1411,6 +1411,9 @@ Input: n = "1000000000000000000"
 Output: "999999999999999999"
 Explanation: 1000000000000000000 base 999999999999999999 is 11.
 ```
+#### Clock
+Question: How many times the hands of a clock, minute, and hour hands, overlap one another in a single day, i.e., 24 hours? Explain mathematically. Also, mention the time when they will do so.
+
 ### Sort
 #### 315. Count of Smaller Numbers After Self
 You are given an integer array nums and you have to return a new counts array. The counts array has the property where counts[i] is the number of smaller elements to the right of nums[i].
