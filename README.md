@@ -66,10 +66,20 @@ Given a random list of appointments (Start Date , End Date). Find all the appoin
 
 Given an array {a0, a1, a2, ... an, b0, b1, b2 ... bn}, Rearrange this array into {a0, b0, a1, b1, a2, b2, ... an, bn} inplace, O (1) space
 
+If xi<xj,yi<yj, we say (xj,yj)dominates(xi,yi). Given a set of number pairs (xi,yi), how many indomitable pairs are there?
 
-sorting nested dictionaries: give a {b: {cb: cranberry, bb: blueberry} a: apple, c: cherry} {a: apple, b: {bb: blueberry, cb: cranberry}, c: cherry. 
-To sort the key output, if there is nested dictionaries, but also to sort
+The two arrays [1,2,3,4,5], [2,3,4,5,6] find the first subfix and the second prefix the same longest case, such as the example is [2, 3,4,5] Length of 4. Followup: how to do two-dimensional array, how to optimize.
 
+Given Two string, ask whether they can become the same after just one swap of two chars in one string. For example: "abcd", "bacd" Yes, you can swap ab in the first string to make it the same as the second string "abcd", "adbc" can not. Follow-up, given Two string, ask whether they can become the same after N swaps of two chars in one string g, assuming that the swap does not overlap.(str [0] <-> str [2] str [2] and str [0] will not be swapped with other locations)
+
+Given a dictionary, output the longest List <String>. The result of a String is the previous String add a character at any position. Example: {i, in, ing, sing, sting, string}
+
+Hint: graph depth first traverse
+	
+Find a “local minimum” in a binary tree: a local min is a node whose value is smaller than that of any other nodes that are connected to it.
+	
+Given an array of length n + 1, containing elements 1 through n and a space, Requires the use of a given swap (index i, index j) function to sort the array,
+You can only swap the gap and a number, in the end, put the gap at the end. 
 
 ### Sort List
 Sort a linked list in O(n log n) time using constant space complexity.
