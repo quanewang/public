@@ -56,9 +56,13 @@ Add Two Numbers As Lists.
 
 Given 2 non negative integers m and n, find gcd(m, n).
 
+Given two two integer arrays. Find the longest common subsequence. eg: a =[1 5 2 6 3 7], b = [5 6 7 1 2 3]. return [1 2 3] or [5 6 7]
+
 Given various subsequences of an array, print the overall array:
 Example: [1, 3, 5], [1, 3, 9], [9, 5]
 Array : [1, 3, 9, 5]
+
+Given a random list of appointments (Start Date , End Date). Find all the appointments that are colliding.
 
 ### Sort List
 Sort a linked list in O(n log n) time using constant space complexity.
