@@ -64,6 +64,13 @@ Array : [1, 3, 9, 5]
 
 Given a random list of appointments (Start Date , End Date). Find all the appointments that are colliding.
 
+Given an array {a0, a1, a2, ... an, b0, b1, b2 ... bn}, Rearrange this array into {a0, b0, a1, b1, a2, b2, ... an, bn} inplace, O (1) space
+
+
+sorting nested dictionaries: give a {b: {cb: cranberry, bb: blueberry} a: apple, c: cherry} {a: apple, b: {bb: blueberry, cb: cranberry}, c: cherry. 
+To sort the key output, if there is nested dictionaries, but also to sort
+
+
 ### Sort List
 Sort a linked list in O(n log n) time using constant space complexity.
 
