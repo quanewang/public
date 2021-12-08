@@ -55,6 +55,11 @@ Given a matrix and a target, return the number of non-empty submatrices that sum
 Add Two Numbers As Lists.
 
 Given 2 non negative integers m and n, find gcd(m, n).
+
+Given various subsequences of an array, print the overall array:
+Example: [1, 3, 5], [1, 3, 9], [9, 5]
+Array : [1, 3, 9, 5]
+
 ### Sort List
 Sort a linked list in O(n log n) time using constant space complexity.
 
