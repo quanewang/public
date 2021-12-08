@@ -1411,8 +1411,12 @@ Input: n = "1000000000000000000"
 Output: "999999999999999999"
 Explanation: 1000000000000000000 base 999999999999999999 is 11.
 ```
-#### Clock
+#### Puzzles
 Question: How many times the hands of a clock, minute, and hour hands, overlap one another in a single day, i.e., 24 hours? Explain mathematically. Also, mention the time when they will do so.
+
+Question: Use the mathematical operations +, -, *, and / on 3, 3, 7, 7 to get 24.
+
+Question: How will you get 10000 by adding only 8?
 
 ### Sort
 #### 315. Count of Smaller Numbers After Self
