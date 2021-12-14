@@ -13,13 +13,13 @@ mock
 
 https://leetcode.com/problemset/all/?difficulty=HARD&page=1
 
-Google 
+google 
 * Given a log of program watch time, find the top ten watch time and views.
 * Map email folders to label: a/b/c tree to a/b/c string
 * Solve word puzzles given a dictionary
 * Prioritze emails form 250k/second to 1000/second
 
-Facebook
+facebook
 * count unbalanced parentethese
 * print tree in column, depth first or breadth first 
 * compute running average: [5 6 7 1 2 3], k=3
