@@ -22,6 +22,7 @@ Google interview
 Facebook
 * count unbalanced paraentethese
 * print tree in column, depth first or breadth first 
+* design ad impression aggregation 
 
 
 ### Problems
