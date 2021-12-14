@@ -26,6 +26,14 @@ facebook
 * coin change problem: how many ways to make 11: {soup:2, fries: 1, fish: 9} 
 * design ad impression aggregation 
 
+```
+Design an Online Judge system that can be used to solve algorithmic questions
+We have a number of registered users already (100K)
+* System will verify and either accept or reject a solution
+* There's a ranking table showing scores - ranking depends on number of failed attempts and submission time only (NOT solution run time)*
+* Contest has a start and end time
+* Solution is source 
+```
 ### Problems
 All the subsets of an array
 
