@@ -13,7 +13,7 @@ mock
 
 https://leetcode.com/problemset/all/?difficulty=HARD&page=1
 
-Google interview
+Google 
 * Given a log of program watch time, find the top ten watch time and views.
 * Map email folders to label: a/b/c tree to a/b/c string
 * Solve word puzzles given a dictionary
