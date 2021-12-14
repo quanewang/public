@@ -13,6 +13,17 @@ mock
 
 https://leetcode.com/problemset/all/?difficulty=HARD&page=1
 
+Google interview
+* Given a log of program watch time, find the top ten watch time and views.
+* Map email folders to label: a/b/c tree to a/b/c string
+* Solve word puzzles given a dictionary
+* Prioritze emails form 250k/second to 1000/second
+
+Facebook
+* count unbalanced paraentethese
+* print tree in column, depth first or breadth first 
+
+
 ### Problems
 All the subsets of an array
 
