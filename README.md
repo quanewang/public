@@ -20,10 +20,11 @@ Google interview
 * Prioritze emails form 250k/second to 1000/second
 
 Facebook
-* count unbalanced paraentethese
+* count unbalanced parentethese
 * print tree in column, depth first or breadth first 
+* compute running average: [5 6 7 1 2 3], k=3
+* coin change problem: how many ways to make 11: {soup:2, fries: 1, fish: 9} 
 * design ad impression aggregation 
-
 
 ### Problems
 All the subsets of an array
@@ -101,6 +102,13 @@ L = [(‘abc’, 10), (‘def’, 15), (‘ghi’, 10), (‘abc’, 12), …, (�
 ```
 The function should return [‘xyz’, ‘abc’, …, ‘def’, ‘ghi’]
 
+Input: a list of items, each comes with a name and price, e.g., {"soup": 4.5, "fries": 2, "fish": 9}. For a given target amount, say 11, find out all possible combinations that sum up to this amount. Note that each item can be chosen multiple times in one combination. In this case, it would be two possible combinations as follows:
+```
+[
+ {soup * 2), fries * 1}.
+ {fish * 1, fries * 1},
+]
+```	
 	
 ### Sort List
 Sort a linked list in O(n log n) time using constant space complexity.
